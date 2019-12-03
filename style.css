@@ -26,8 +26,10 @@ Version: 1.0
   width: 100%;
   justify-content: space-between;
   background-color: #f8f8f8; }
-  .menu-principal .active, .menu-principal a:hover {
-    border-bottom: solid 3px #EBEBEB;
+  .menu-principal a:not(.btn) {
+    border-bottom: solid 3px transparent; }
+  .menu-principal a.active:not(.btn), .menu-principal a:hover:not(.btn) {
+    border-bottom: solid 3px #FEBD11;
     background: #1D387D;
     border-radius: 4px; }
   .menu-principal .btn {

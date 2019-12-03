@@ -29,7 +29,8 @@
 
 <body <?php body_class(); ?>>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="" href="#">
                                     <img class="d-inline-block align-top" src="https://rotary-quebecest.org/contenu/wp-content/themes/rotary/images/rotary-qcest-logo-full.png" alt="Rotary - Club de Québec-Est">
 
@@ -61,6 +62,7 @@
             </ul>
         </div>
     </nav>
+</div>
 
 
 

@@ -69,10 +69,13 @@ $the_query_xs = new WP_Query($args);
 </script>
 <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
   
+
+<?php echo esc_html($post->facebook) ?>
 <div 
   class="fb-post" 
   data-href="https://www.facebook.com/115076485260317/posts/2159444704156808" 
-  data-width="750"></div>
+  data-width=""> <!-- leave data-width empty to use fluid width -->
+  </div>
             </div>
         </div>
         <div class="col-md-4">

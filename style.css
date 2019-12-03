@@ -225,7 +225,6 @@ a.list-group-item {
   color: #fff;
   margin-bottom: 1.2em; }
 
-/*.inner-footer a{font-size:0.8em !important;}*/
 .footer-col-info p {
   color: #ccc; }
 
@@ -245,24 +244,8 @@ a.list-group-item {
   color: #FEBD11;
   font-size: 1.5em; }
 
-.overflow-hidden {
-  overflow: hidden; }
-
 .reserve {
   border-top: solid 1px #515151; }
-
-.padding-top-1 {
-  padding-top: 1em; }
-
-.margin-right-5 {
-  margin-right: 0.5em; }
-
-img {
-  max-width: 100%;
-  height: auto; }
-
-.float-right {
-  float: right; }
 
 .un-programme-resume {
   margin: 2em 0 2em 0;
@@ -328,8 +311,6 @@ img {
 
 .fluid-bg-cite-joie {
   background: #fafafa;
-  /*border-top: solid 2px #F9EDB8;
-  border-bottom: solid 2px #F9EDB8;*/
   margin: 1em 0; }
 
 .promo-cite-joie {
@@ -364,39 +345,12 @@ img {
   color: #FFF;
   background: #0058A3; }
 
-/*.rt-box-index .btn-default#join { color: #1F427E; background: #FFD200; }*/
 .une-nouvelle {
   margin: 0 0 1em 0;
   border: solid 1px #e8e8e8;
   border-radius: 4px;
   padding: 1em;
   overflow: hidden; }
-
-.carousel {
-  margin-top: 0;
-  margin-bottom: 30px; }
-
-.carousel-indicators {
-  left: 50px;
-  bottom: 10px; }
-
-.carousel-inner {
-  border: 1px solid;
-  border-color: #E5E6E9 #DFE0E4 #D0D1D5; }
-
-.carousel-inner > .item > img {
-  margin: 0 auto; }
-
-.carousel-control.left, .carousel-control.right {
-  background: none;
-  display: none; }
-
-.carousel-control [class^="glyphicon"]::before {
-  padding: 20px;
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  background: rgba(0, 0, 0, 0.5); }
 
 .dateacc-news {
   font-size: 0.8em !important;

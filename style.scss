@@ -33,6 +33,9 @@ Version: 1.0
 $body-background: #fff;
 $darker-blue: #00246C;
 $primary: #1D387D;
+$the-yellow: #FEBD11;
+$secondary: $the-yellow;
+$the-grey: #EBEBEB;
 
 
 //** Menus */
@@ -186,78 +189,13 @@ color: #555;
 	display: block;
 	}
 
-/***************** footer ******************/
+	// Footer
+@import "./styles/footer";
 
-.text-align-center{
-	text-align:center;
-	}
-	
-	.rt-footer { 
-	margin-top: 50px;
-	padding-bottom: 1.5em;
-	background:#444;
-	}
-	.inner-footer{
-		padding:1.2em 0;
-		}
-	
-	.rt-footer p
-	{ 
-	color:#fff;
-	font-size: 0.85em !important;	
-	font-family:Arial,Helvetica,sans-serif !important;	
-	}
-	.rt-footer a{ 
-		color:#fff;	
-		text-decoration:underline;
-		/*font-size: 0.85em !important;*/
-	}
-	.rt-footer a:hover{ 
-		color:#febd11;	
-	}
-	
-	.rt-footer h4{ 
-	color:#fff;
-	margin-bottom:1.2em;
-	}
-	
-		/*.inner-footer a{font-size:0.8em !important;}*/
+
 		
-		
-	.footer-col-info p{
-		color:#ccc;
-		}	
-		
-	.foot-tel{
-		color:#fff !important;
-		margin:2em 0;
-		 font-family: 'museo_slab300';
-		}
-		.theme-rotary{
-			margin:1em 0;			
-			}	
-		
-		.inner-foot-infos-club{
-			padding: 0 3em 0 0;
-			overflow:hidden;
-			}
-		.club-yellow-foot{
-			color:#FEBD11;
-			font-size:1.5em;			
-			}
-		.overflow-hidden{overflow:hidden;}
 		.reserve{border-top:solid 1px #515151; }
-		.padding-top-1{padding-top:1em;}
 		
-		.margin-right-5{margin-right:0.5em;}
-img{
-	max-width: 100%;
-	 height: auto;	 
-	 }
-	
-.float-right{
-	float:right;
-	}
 .un-programme-resume{
 	margin:2em 0 2em 0;
 	border-bottom:solid 1px #e8e8e8;		
@@ -266,9 +204,7 @@ img{
 .un-programme-resume:last-child{		
 	border:none;		
 	}
-	.fluid-3-col{
-		
-		}
+
 	.div-3-col{
 		margin-top:1em;		
 		padding:1.5em 0;
@@ -278,7 +214,7 @@ img{
 		font-family:'museo_slab300';	
 		}
 		.citation-page-int{
-			border-left:solid 3px #FEBD11;
+			border-left:solid 3px $the-yellow;
 			
 		}
 		.inner-citation-int{
@@ -298,8 +234,12 @@ img{
 /*                     ACCUEIL                                              */
 
 /***************************************************************************/
+
+
+
+
 .bg-gris{
-	background:#EBEBEB;	
+	background:$the-grey;	
 	}
 .out-citation{
 margin:1em 0;	
@@ -317,7 +257,7 @@ font-family:'museo_slab300';
 margin:0.5em 0 0;
 }
 .citation-evidence{
-	border-bottom:solid 3px #FEBD11;	
+	border-bottom:solid 3px $the-yellow;	
 	font-family: 'museo_slab700'; 
 	margin:0 0.5em;
 	}
@@ -329,8 +269,7 @@ margin:0.5em 0 0;
 	}
 .fluid-bg-cite-joie{
 background: #fafafa;
-/*border-top: solid 2px #F9EDB8;
-border-bottom: solid 2px #F9EDB8;*/
+
 margin: 1em 0;
 }
 	.promo-cite-joie{
@@ -348,7 +287,6 @@ margin: 1em 0;
 .rt-box-index h4 { color: #02206F; font-weight: bold; font-size: 15px; margin: 0 0 20px 0; padding-bottom: 20px; border-bottom: 1px dashed #02206F;   }
 .rt-box-index p { margin-bottom: 20px; }
 .rt-box-index .btn-default { font-weight: bold; color: #FFF; background: #0058A3; }
-/*.rt-box-index .btn-default#join { color: #1F427E; background: #FFD200; }*/
 
 .une-nouvelle{
 	margin:0 0 1em 0;
@@ -357,12 +295,6 @@ margin: 1em 0;
 	padding:1em;
 	overflow:hidden;
 	}
-.carousel { margin-top: 0; margin-bottom: 30px; }
-.carousel-indicators { left: 50px; bottom: 10px; }
-.carousel-inner { border: 1px solid; border-color: #E5E6E9 #DFE0E4 #D0D1D5; }
-.carousel-inner > .item > img { margin: 0 auto; }
-.carousel-control.left, .carousel-control.right { background: none; display: none; }
-.carousel-control [class^="glyphicon"]::before { padding: 20px; border-radius: 50%; width: 70px; height: 70px; background: rgba(0,0,0,0.5); }
 
 .dateacc-news{
 	font-size:0.8em !important;
@@ -399,6 +331,10 @@ margin: 1em 0;
 /*                    	          Menu                                     */
 
 /***************************************************************************/
+
+
+
+
 /*.rt-brand { height: 70px; }*/
 .navbar-default .navbar-nav > li > a { padding: 8px 15px; font-weight: bold; font-size: 1em; color: #02206F; }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus { color: #4762AA; }
@@ -412,7 +348,7 @@ margin: 1em 0;
 	}
 .rt-navbar .rt-join:hover { background: #FFDD3C; }
 .navbar { border-radius: 0; }
-.navbar-default { background-color: #EBEBEB; border: none; }
+.navbar-default { background-color: $the-grey; border: none; }
 .navbar-brand { height: auto; }
 .navbar-toggle { margin-top: 36px; }
 .rt-aside .rt-navbar{margin:0 !important;}

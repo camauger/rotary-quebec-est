@@ -1,0 +1,6 @@
+.carousel { margin-top: 0; margin-bottom: 30px; }
+.carousel-indicators { left: 50px; bottom: 10px; }
+.carousel-inner { border: 1px solid; border-color: #E5E6E9 #DFE0E4 #D0D1D5; }
+.carousel-inner > .item > img { margin: 0 auto; }
+.carousel-control.left, .carousel-control.right { background: none; display: none; }
+.carousel-control [class^="glyphicon"]::before { padding: 20px; border-radius: 50%; width: 70px; height: 70px; background: rgba(0,0,0,0.5); }

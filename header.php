@@ -32,8 +32,8 @@
     
 <div class="container">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="" href="#">
-                                    <img class="d-inline-block align-top" src="https://rotary-quebecest.org/contenu/wp-content/themes/rotary/images/rotary-qcest-logo-full.png" alt="Rotary - Club de Québec-Est">
+        <a class="" href="<?php echo home_url(); ?>">
+                                    <img class="d-inline-block align-top" src="<?php echo get_template_directory_uri(); ?>/images/rotary-qcest-logo-full.png" alt="Rotary - Club de Québec-Est">
 
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +58,7 @@
                     <a class="nav-link" href="https://rotary-quebecest.org/contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://rotary-quebecest.org/fr/_new/demande_adhesion.php">Devenir membre</a>
+                    <a class="nav-link btn btn-secondary" href="https://rotary-quebecest.org/fr/_new/demande_adhesion.php">Devenir membre</a>
                 </li>
             </ul>
         </div>

@@ -80,9 +80,9 @@ $the_query_xs = new WP_Query($args);
         </div>
         <div class="col-md-4">
             <div class="">
-                <img src="https://rotary-quebecest.org/contenu/wp-content/uploads/2014/09/Rotary-Promoting-Peace-700x233.jpg" alt="Nous passons à l'action">
-                <h3 class="margin-bottom-1">Nous passons à l'action</h3>
-                <p>Nous rapprochons des gens passionnés qui apportent leurs diverses perspectives, échangent des idées, nouent des amitiés durables, et, par-dessus tout, passent à l'action pour changer le monde.</p>
+                <img src="<?php echo esc_html($post->blocImage) ?>" alt="Nous passons à l'action">
+                <h3 class="margin-bottom-1"><?php echo esc_html($post->blocTitre) ?></h3>
+                <p><?php echo esc_html($post->blocTexte) ?></p>
             </div>
         </div>
 

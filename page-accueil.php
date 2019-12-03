@@ -55,7 +55,7 @@ $the_query_xs = new WP_Query($args);
             <div class="rt-box-index rt-round">
                 <h3>En bref sur <span class="bold">Facebook</span></h3>
 
-                <div class="fb-page" data-href="https://www.facebook.com/ClubRotaryQuebecEst/" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false">
+                <div class="fb-page" data-href="https://www.facebook.com/ClubRotaryQuebecEst/" data-tabs="timeline" data-width="500px" data-height="100%" data-small-header="true" data-hide-cta="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false">
                     <blockquote cite="https://www.facebook.com/ClubRotaryQuebecEst/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ClubRotaryQuebecEst/">Club Rotary Québec-Est</a></blockquote>
                 </div>
 

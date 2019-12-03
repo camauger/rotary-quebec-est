@@ -59,7 +59,20 @@ $the_query_xs = new WP_Query($args);
                     <blockquote cite="https://www.facebook.com/ClubRotaryQuebecEst/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ClubRotaryQuebecEst/">Club Rotary Québec-Est</a></blockquote>
                 </div>
 
-
+                <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml      : true,
+      version    : 'v5.0'
+    });
+  }; 
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+  
+<div 
+  class="fb-post" 
+  data-href="https://www.facebook.com/115076485260317/feed?fields=permalink_url" 
+  data-width="500"></div>
             </div>
         </div>
         <div class="col-md-4">

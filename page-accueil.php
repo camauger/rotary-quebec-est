@@ -51,7 +51,7 @@ $the_query_xs = new WP_Query($args);
 
 <div class="container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-7">
             <div class="rt-box-index rt-round">
                 <h3>En bref sur <span class="bold">Facebook</span></h3>
 
@@ -68,7 +68,11 @@ $the_query_xs = new WP_Query($args);
   }; 
 </script>
 <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
-  
+  <style>
+  ._4-u2 {
+    border: none;
+    
+}</style>
 
 <?php echo esc_html($post->facebook) ?>
 <div 
@@ -78,8 +82,8 @@ $the_query_xs = new WP_Query($args);
   </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="rt-box-index rt-round">
+        <div class="col-md-5">
+            <div class="">
                 <img src="https://rotary-quebecest.org/contenu/wp-content/uploads/2014/09/Rotary-Promoting-Peace-700x233.jpg" alt="Nous passons à l'action">
                 <h3 class="margin-bottom-1">Nous passons à l'action</h3>
                 <p>Nous rapprochons des gens passionnés qui apportent leurs diverses perspectives, échangent des idées, nouent des amitiés durables, et, par-dessus tout, passent à l'action pour changer le monde.</p>

@@ -28,7 +28,8 @@
 
 
 <body <?php body_class(); ?>>
-
+<div class="wrapper--nav">
+    
 <div class="container">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="" href="#">
@@ -62,6 +63,7 @@
             </ul>
         </div>
     </nav>
+</div>
 </div>
 
 

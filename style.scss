@@ -36,11 +36,19 @@ $primary: #1D387D;
 
 
 //** Menus */
+$menu-background-color: #f8f8f8;
+$menu-border-color: #e7e7e7;
+
+.wrapper--nav {
+	width: 100%;
+	background-color: $menu-background-color;
+}
 
 .menu-principal {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
+	background-color: $menu-background-color;
 }
 
 

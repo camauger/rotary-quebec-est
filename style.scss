@@ -52,6 +52,16 @@ $menu-border-color: #e7e7e7;
 	width: 100%;
 	justify-content: space-between;
 	background-color: $menu-background-color;
+	.active, a:hover {
+		border-bottom: solid 3px $the-grey;
+		background: $primary;
+		border-radius: 4px;
+		//margin: 0 !important;
+	}
+
+	.btn {
+		background: $the-yellow;
+	}
 }
 
 

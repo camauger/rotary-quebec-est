@@ -26,6 +26,12 @@ Version: 1.0
   width: 100%;
   justify-content: space-between;
   background-color: #f8f8f8; }
+  .menu-principal .active, .menu-principal a:hover {
+    border-bottom: solid 3px #EBEBEB;
+    background: #1D387D;
+    border-radius: 4px; }
+  .menu-principal .btn {
+    background: #FEBD11; }
 
 body {
   background: #fff;

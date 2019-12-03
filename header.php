@@ -58,7 +58,7 @@
                     <a class="nav-link" href="https://rotary-quebecest.org/contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-secondary" href="https://rotary-quebecest.org/fr/_new/demande_adhesion.php">Devenir membre</a>
+                    <a class="nav-link btn" href="https://rotary-quebecest.org/fr/_new/demande_adhesion.php">Devenir membre</a>
                 </li>
             </ul>
         </div>

@@ -90,4 +90,4 @@
             </div>
         </div>
     </nav> -->
-    <div class="rt-wrapper">
+    <div class="wrapper--page">

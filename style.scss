@@ -34,6 +34,16 @@ $body-background: #fff;
 $darker-blue: #00246C;
 $primary: #1D387D;
 
+
+//** Menus */
+
+.menu-principal {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+
 body { 
 background:$body-background;
 font-size:16px;
@@ -155,7 +165,7 @@ color: #555;
 
 
 .rt-round { border-radius: 4px; }
-.rt-wrapper { margin-top: 145px; }
+// .rt-wrapper { margin-top: 145px; }
 
 .rt-article { background: #FFF; border: 1px solid #D6DCEE; padding: 1em 2em 3em 2em; overflow:hidden;}
 .rt-article h3 { margin-top: 10px; margin-bottom: 10px; }
@@ -460,9 +470,7 @@ margin: 1em 0;
 	font-family:Verdana, Geneva, sans-serif;	
 	}
 	
-	.citejoie-video {
-	
-	}
+
 	
 .embed-responsive.embed-responsive-16by9 {
 padding-bottom: 56.25%;

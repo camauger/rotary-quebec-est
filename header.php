@@ -30,7 +30,7 @@
 <body <?php body_class(); ?>>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+        <a class="" href="#">
                                     <img class="d-inline-block align-top" src="https://rotary-quebecest.org/contenu/wp-content/themes/rotary/images/rotary-qcest-logo-full.png" alt="Rotary - Club de Québec-Est">
 
         </a>
@@ -39,7 +39,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto menu-principal">
                 <li class="nav-item">
                     <a class="nav-link" href="https://rotary-quebecest.org/le-club/mot-du-president/">Le club</a>
                 </li>

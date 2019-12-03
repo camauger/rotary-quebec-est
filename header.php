@@ -31,7 +31,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-                                    <img src="https://rotary-quebecest.org/contenu/wp-content/themes/rotary/images/rotary-qcest-logo-full.png" alt="Rotary - Club de Québec-Est">
+                                    <img class="d-inline-block align-top" src="https://rotary-quebecest.org/contenu/wp-content/themes/rotary/images/rotary-qcest-logo-full.png" alt="Rotary - Club de Québec-Est">
 
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,10 +55,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="https://rotary-quebecest.org/contact">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://rotary-quebecest.org/fr/_new/demande_adhesion.php">Devenir membre</a>
+                </li>
             </ul>
-            <a class="btn btn-primary my-2 my-lg-0" href="https://rotary-quebecest.org/fr/_new/demande_adhesion.php">
-                Devenir membre
-            </a>
         </div>
     </nav>
 

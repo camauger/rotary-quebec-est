@@ -16,17 +16,7 @@ $the_query_xs = new WP_Query($args);
 ?>
 
 <?php get_header(); ?>
-<!-- <div id="fb-root"></div> -->
-<!-- <script>
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/fr_CA/sdk.js#xfbml=1&version=v2.3";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script> -->
+
 <div class="jumbotron">
     <div class="container">
         <?php if (has_post_thumbnail()) {
@@ -60,22 +50,20 @@ $the_query_xs = new WP_Query($args);
                 </div> -->
 
                 <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml      : true,
-      version    : 'v5.0'
-    });
-  }; 
-</script>
-<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+                    window.fbAsyncInit = function() {
+                        FB.init({
+                            xfbml: true,
+                            version: 'v5.0'
+                        });
+                    };
+                </script>
+                <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
 
 
 
-<div 
-  class="fb-post" 
-  data-href="https://www.facebook.com/115076485260317/posts/<?php echo esc_html($post->facebook) ?>" 
-  data-width=""> <!-- leave data-width empty to use fluid width -->
-  </div>
+                <div class="fb-post" data-href="https://www.facebook.com/115076485260317/posts/<?php echo esc_html($post->facebook) ?>" data-width="">
+                    <!-- leave data-width empty to use fluid width -->
+                </div>
             </div>
         </div>
         <div class="col-md-4">

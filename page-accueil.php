@@ -71,7 +71,7 @@ $the_query_xs = new WP_Query($args);
   
 <div 
   class="fb-post" 
-  data-href="https://www.facebook.com/115076485260317/feed?fields=permalink_url" 
+  data-href="https://www.facebook.com/115076485260317/posts/feed?fields=permalink_url" 
   data-width="500"></div>
             </div>
         </div>

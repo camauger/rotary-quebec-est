@@ -63,25 +63,17 @@ $the_query_xs = new WP_Query($args);
                     </div>
                 </div>
             </div>
-
-
-            <div class="col-md-4">
-                <div class="">
-                    <!-- rt-box-index rt-round -->
-                    <h3 class="margin-bottom-1">Nouvelles <span class="bold">du Club</span></h3>
-                    <p>Nous rapprochons des gens passionnés qui apportent leurs diverses perspectives, échangent des idées, nouent des amitiés durables, et, par-dessus tout, passent à l'action pour changer le monde.</p>
-
-                    <!-- <div>
-
-                    <?php $args = array('name' => 'nouvelles-page-daccueil');
-                    echo render_view($args); ?>
-                </div> -->
-                </div>
-            </div>
-
         </div>
+        <div class="col-md-4">
+            <div class="rt-box-index rt-round">
+                <h3 class="margin-bottom-1">Nouvelles <span class="bold">du Club</span></h3>
+                <p>Nous rapprochons des gens passionnés qui apportent leurs diverses perspectives, échangent des idées, nouent des amitiés durables, et, par-dessus tout, passent à l'action pour changer le monde.</p>
+            </div>
+        </div>
+
     </div>
-</div><!-- container -->
+</div>
+<!-- container -->
 <div class="container-fluid fluid-bg-cite-joie">
     <div class="container">
         <div class="row">

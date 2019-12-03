@@ -53,7 +53,7 @@
                     <a class="nav-link" href="https://rotary-quebecest.org/fr/membres/bottin.php">Bottin</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#https://rotary-quebecest.org/contact/>Contact</a>
+                    <a class="nav-link" href="https://rotary-quebecest.org/contact">Contact</a>
                 </li>
             </ul>
             <a class="btn btn-primary my-2 my-lg-0" href="https://rotary-quebecest.org/fr/_new/demande_adhesion.php">

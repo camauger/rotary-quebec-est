@@ -10,7 +10,7 @@ Version: 1.0
   font-family: "Helvetica Neue";
   src: local("Open Sans"); }
 @font-face {
-  font-family: 'Helvetica Neue';
+  font-family: "Helvetica Neue";
   src: local("Open Sans"); }
 @font-face {
   font-family: "Helvetica Neue";
@@ -21,19 +21,26 @@ Version: 1.0
   width: 100%;
   background-color: #f8f8f8; }
 
+a.logo img {
+  max-height: 60px; }
+
 .menu-principal {
   display: flex;
   width: 100%;
   justify-content: space-between;
   background-color: #f8f8f8; }
   .menu-principal a:not(.btn) {
-    border-bottom: solid 3px transparent; }
-  .menu-principal a.active:not(.btn), .menu-principal a:hover:not(.btn) {
-    border-bottom: solid 3px #FEBD11;
-    background: #1D387D;
-    border-radius: 4px; }
+    border-bottom: solid 3px transparent;
+    padding-left: 6px;
+    padding-right: 6px; }
+  .menu-principal a.active:not(.btn),
+  .menu-principal a:hover:not(.btn) {
+    border-bottom: solid 3px #febd11;
+    background: #1d387d;
+    border-radius: 4px;
+    color: white; }
   .menu-principal .btn {
-    background: #FEBD11; }
+    background: #febd11; }
 
 body {
   background: #fff;
@@ -55,29 +62,28 @@ body {
 h3,
 h4 {
   margin: 0.5em 0;
-  color: #00246C;
-  font-family: 'museo_slab500'; }
+  color: #00246c;
+  font-family: "museo_slab500"; }
 
 h1 {
   font-size: 2.5em;
-  color: #1D387D;
+  color: #1d387d;
   margin: 0.75em 0;
-  font-family: 'museo_slab500'; }
+  font-family: "museo_slab500"; }
 
 h2 {
-  color: #1D387D;
+  color: #1d387d;
   margin: 0.75em 0;
-  font-family: 'museo_slab300'; }
+  font-family: "museo_slab300"; }
 
 a {
-  color: #1D387D;
+  color: #1d387d;
   outline: none; }
 
 p,
 p span,
 li span {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
   line-height: 23px; }
 
 li {
@@ -95,11 +101,13 @@ li {
 a.list-group-item {
   color: #555; }
 
-.input-lg, .btn, .btn-lg {
+.input-lg,
+.btn,
+.btn-lg {
   border-radius: 3px; }
 
 .bold {
-  font-family: 'museo_slab700'; }
+  font-family: "museo_slab700"; }
 
 .alignright {
   float: right; }
@@ -128,23 +136,23 @@ a.list-group-item {
   transition-duration: 0.3s; }
 
 .btn-primary {
-  border: 1px solid #02A3DE;
-  background: #02ADEA;
+  border: 1px solid #02a3de;
+  background: #02adea;
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
   text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.15);
-  color: #FFF; }
+  color: #fff; }
 
 .btn-primary:hover {
-  border: 1px solid #02A3DE;
-  background: #09BDFD; }
+  border: 1px solid #02a3de;
+  background: #09bdfd; }
 
 .btn-success {
-  border: 1px solid #2FAB41;
+  border: 1px solid #2fab41;
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2); }
 
 .btn-success:hover {
-  border: 1px solid #2FAB41;
-  background: #41CB56; }
+  border: 1px solid #2fab41;
+  background: #41cb56; }
 
 .btn-bleu {
   border: solid 1px #e8e8e8;
@@ -161,7 +169,7 @@ a.list-group-item {
   background: -ms-linear-gradient(top, #1d46ad 0%, #324880 100%);
   background: linear-gradient(to bottom, #1d46ad 0%, #324880 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d46ad', endColorstr='#324880', GradientType=0 );
-  border-bottom: solid 3px #FFDD3C;
+  border-bottom: solid 3px #ffdd3c;
   margin: 1em 0; }
 
 .btn-bleu:hover {
@@ -175,16 +183,17 @@ a.list-group-item {
   background: linear-gradient(to bottom, #3e5aa5 0%, #1d46ad 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e5aa5', endColorstr='#1d46ad', GradientType=0 ); }
 
-.a.list-group-item.active:hover, a.list-group-item.active {
-  background: #879CCF;
-  border-color: #879CCF; }
+.a.list-group-item.active:hover,
+a.list-group-item.active {
+  background: #879ccf;
+  border-color: #879ccf; }
 
 .rt-round {
   border-radius: 4px; }
 
 .rt-article {
-  background: #FFF;
-  border: 1px solid #D6DCEE;
+  background: #fff;
+  border: 1px solid #d6dcee;
   padding: 1em 2em 3em 2em;
   overflow: hidden; }
 
@@ -269,10 +278,10 @@ a.list-group-item {
   overflow: hidden; }
 
 .div-3-col p {
-  font-family: 'museo_slab300'; }
+  font-family: "museo_slab300"; }
 
 .citation-page-int {
-  border-left: solid 3px #FEBD11; }
+  border-left: solid 3px #febd11; }
 
 .inner-citation-int {
   padding: 0em 0.5em 0 1em;
@@ -289,7 +298,7 @@ a.list-group-item {
 /*                     ACCUEIL                                              */
 /***************************************************************************/
 .bg-gris {
-  background: #EBEBEB; }
+  background: #ebebeb; }
 
 .out-citation {
   margin: 1em 0;
@@ -303,17 +312,17 @@ a.list-group-item {
   background: #fafafa; }
 
 .text-citation p {
-  font-family: 'museo_slab300';
+  font-family: "museo_slab300";
   margin: 0.5em 0 0; }
 
 .citation-evidence {
-  border-bottom: solid 3px #FEBD11;
-  font-family: 'museo_slab700';
+  border-bottom: solid 3px #febd11;
+  font-family: "museo_slab700";
   margin: 0 0.5em; }
 
 .citation-accueil {
   text-align: center;
-  font-family: 'museo_slab300';
+  font-family: "museo_slab300";
   font-size: 1.2em;
   padding: 0.75em 0; }
 
@@ -326,32 +335,32 @@ a.list-group-item {
   overflow: hidden; }
 
 .promo-cite-joie p {
-  font-family: 'museo_slab300'; }
+  font-family: "museo_slab300"; }
 
 .promo-cite-joie img {
   margin: 0 1em 0 0; }
 
 .rt-box-index {
-  background: #FFF;
-  border: 1px solid #D6DCEE;
+  background: #fff;
+  border: 1px solid #d6dcee;
   padding: 0.5em 1em;
   /*min-height: 569px;*/ }
 
 .rt-box-index h4 {
-  color: #02206F;
+  color: #02206f;
   font-weight: bold;
   font-size: 15px;
   margin: 0 0 20px 0;
   padding-bottom: 20px;
-  border-bottom: 1px dashed #02206F; }
+  border-bottom: 1px dashed #02206f; }
 
 .rt-box-index p {
   margin-bottom: 20px; }
 
 .rt-box-index .btn-default {
   font-weight: bold;
-  color: #FFF;
-  background: #0058A3; }
+  color: #fff;
+  background: #0058a3; }
 
 .une-nouvelle {
   margin: 0 0 1em 0;
@@ -397,26 +406,27 @@ a.list-group-item {
   padding: 8px 15px;
   font-weight: bold;
   font-size: 1em;
-  color: #02206F; }
+  color: #02206f; }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #4762AA; }
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #4762aa; }
 
 .rt-navbar .rt-join {
   margin: 0 0 0 1em !important;
   border-radius: 3px;
   font-size: 1em;
-  color: #1F427E;
-  background: #FFD200; }
+  color: #1f427e;
+  background: #ffd200; }
 
 .rt-navbar .rt-join:hover {
-  background: #FFDD3C; }
+  background: #ffdd3c; }
 
 .navbar {
   border-radius: 0; }
 
 .navbar-default {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   border: none; }
 
 .navbar-brand {
@@ -429,8 +439,8 @@ a.list-group-item {
   margin: 0 !important; }
 
 .current-menu-item {
-  border-bottom: solid 3px #FFDD3C;
-  background: #1D387D !important;
+  border-bottom: solid 3px #ffdd3c;
+  background: #1d387d !important;
   border-radius: 4px;
   margin: 0 !important; }
 
@@ -438,7 +448,7 @@ a.list-group-item {
   color: #fff !important; }
 
 .rt-aside a:hover {
-  background: #1D387D !important;
+  background: #1d387d !important;
   color: #fff !important;
   text-decoration: none; }
 
@@ -449,9 +459,9 @@ a.list-group-item {
   width: 100%; }
 
 #SousMenuSelect {
-  background: #1D387D;
+  background: #1d387d;
   color: #fff;
-  border-bottom: solid 5px #FFDD3C; }
+  border-bottom: solid 5px #ffdd3c; }
 
 .shadow-bottom {
   -webkit-box-shadow: 0px 0px 8px 2px #ccc;
@@ -460,16 +470,16 @@ a.list-group-item {
   margin-bottom: 1em; }
 
 .button:hover {
-  background: #1D387D;
+  background: #1d387d;
   color: #fff; }
 
 .button {
   margin: 1em 0;
-  background: #FFDD3C;
-  color: #1D387D;
+  background: #ffdd3c;
+  color: #1d387d;
   padding: 0.5em 1em;
   border-radius: 4px;
-  border: solid 1px #FFDD3C; }
+  border: solid 1px #ffdd3c; }
 
 #bouton_contact {
   margin: 10px 0 0 0; }
@@ -499,7 +509,11 @@ a.list-group-item {
   padding: 0;
   overflow: hidden; }
 
-.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+.embed-responsive .embed-responsive-item,
+.embed-responsive embed,
+.embed-responsive iframe,
+.embed-responsive object,
+.embed-responsive video {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -553,7 +567,7 @@ a.list-group-item {
 .nomMemBottin {
   border-top: 2px solid white;
   font-size: 14px;
-  background: #1D387D;
+  background: #1d387d;
   color: #fff;
   font-weight: bold;
   min-height: 25px;
@@ -587,25 +601,25 @@ a.list-group-item {
 /***************************************************************************/
 /* Generated by Font Squirrel (http://www.fontsquirrel.com) on January 14, 2015 */
 @font-face {
-  font-family: 'museo_slab300_italic';
+  font-family: "museo_slab300_italic";
   src: url("fonts/museo_slab_300italic-webfont.eot");
   src: url("fonts/museo_slab_300italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/museo_slab_300italic-webfont.woff2") format("woff2"), url("fonts/museo_slab_300italic-webfont.woff") format("woff"), url("fonts/museo_slab_300italic-webfont.ttf") format("truetype"), url("fonts/museo_slab_300italic-webfont.svg#museo_slab300_italic") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'museo_slab500';
+  font-family: "museo_slab500";
   src: url("fonts/museo_slab_2-webfont.eot");
   src: url("fonts/museo_slab_2-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/museo_slab_2-webfont.woff2") format("woff2"), url("fonts/museo_slab_2-webfont.woff") format("woff"), url("fonts/museo_slab_2-webfont.ttf") format("truetype"), url("fonts/museo_slab_2-webfont.svg#museo_slab500") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'museo_slab300';
+  font-family: "museo_slab300";
   src: url("fonts/museo_slab_1-webfont.eot");
   src: url("fonts/museo_slab_1-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/museo_slab_1-webfont.woff2") format("woff2"), url("fonts/museo_slab_1-webfont.woff") format("woff"), url("fonts/museo_slab_1-webfont.ttf") format("truetype"), url("fonts/museo_slab_1-webfont.svg#museo_slab300") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'museo_slab700';
+  font-family: "museo_slab700";
   src: url("fonts/museo_slab_0-webfont.eot");
   src: url("fonts/museo_slab_0-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/museo_slab_0-webfont.woff2") format("woff2"), url("fonts/museo_slab_0-webfont.woff") format("woff"), url("fonts/museo_slab_0-webfont.ttf") format("truetype"), url("fonts/museo_slab_0-webfont.svg#museo_slab700") format("svg");
   font-weight: normal;
@@ -622,7 +636,8 @@ a.list-group-item {
   border-top: 2px solid white;
   border-bottom: 2px solid white; }
 
-.table-bottin td, .table-bottin th {
+.table-bottin td,
+.table-bottin th {
   float: left;
   width: 50%; }
 
@@ -725,7 +740,8 @@ ul.ulMembresComite .vPrenomNomMembre {
   .navbar-collapse.collapse.in {
     display: block !important; }
 
-  .navbar-header .collapse, .navbar-toggle {
+  .navbar-header .collapse,
+  .navbar-toggle {
     display: block !important; }
 
   .navbar-header {

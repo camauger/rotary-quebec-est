@@ -63,13 +63,12 @@ $the_query_xs = new WP_Query($args);
     </div>
 </section>
 <!-- container -->
-<div class="container-fluid fluid-bg-cite-joie">
+<div class="bg-gris">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="promo-cite-joie">
                     <!-- rt-box-index rt-round -->
-
                     <div>
                         <?php $args = array('name' => 'vue-promo-cite-joie');
                         echo render_view($args); ?>

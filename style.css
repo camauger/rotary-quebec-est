@@ -35,6 +35,10 @@ a.logo img {
   justify-content: space-between;
   background-color: #f8f8f8;
   padding-left: 40px; }
+  .menu-principal a.btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700; }
   .menu-principal a:not(.btn) {
     border-bottom: solid 3px transparent;
     padding-left: 6px;
@@ -80,12 +84,10 @@ h4 {
 h1 {
   font-size: 2.5em;
   color: #1d387d;
-  margin: 0.75em 0;
   font-family: "museo_slab500"; }
 
 h2 {
   color: #1d387d;
-  margin: 0.75em 0;
   font-family: "museo_slab300"; }
 
 a {
@@ -112,20 +114,6 @@ li {
 
 a.list-group-item {
   color: #555; }
-
-.input-lg,
-.btn,
-.btn-lg {
-  border-radius: 3px; }
-
-.bold {
-  font-family: "museo_slab700"; }
-
-.alignright {
-  float: right; }
-
-.alignleft {
-  float: left; }
 
 .margin-bottom-2 {
   margin-bottom: 2em; }
@@ -355,8 +343,7 @@ a.list-group-item.active {
 .rt-box-index {
   background: #fff;
   border: 1px solid #d6dcee;
-  padding: 0.5em 1em;
-  /*min-height: 569px;*/ }
+  padding: 0.5em 1em; }
 
 .rt-box-index h4 {
   color: #02206f;
@@ -413,17 +400,6 @@ a.list-group-item.active {
 /****************************************************************************/
 /*                    	          Menu                                     */
 /***************************************************************************/
-/*.rt-brand { height: 70px; }*/
-.navbar-default .navbar-nav > li > a {
-  padding: 8px 15px;
-  font-weight: bold;
-  font-size: 1em;
-  color: #02206f; }
-
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #4762aa; }
-
 .rt-navbar .rt-join {
   margin: 0 0 0 1em !important;
   border-radius: 3px;
@@ -537,45 +513,10 @@ a.list-group-item.active {
 /****************************************************************************/
 /*                     BOTTIN                                              */
 /***************************************************************************/
-/*
-.tabBottinMembre {
-	border-radius:4px;
-    border: 1px solid #ccc;
-    float: left;
-    font-size: 11px !important;    
-    min-height: 135px;
-    padding: 0 0 1em;
-    width: 325px;
-	margin:0 auto 1em auto;
-}
-.tabBottinMembre  p
-{
-	font-size:11px;
-}*/
 .noPageAlign {
   text-align: center;
   font-size: 12px; }
 
-/*.photoMembre
-{
-	width:116px;
-	height:130px;
-	float:left;
-	border-left:2px solid white;
-	border-top:2px solid white;
-	border-bottom:2px solid white;
-}
-.infoMembre
-{
-	float:right;
-	width:205px;
-}
-.infoMembre p
-{
-	margin:10px 0 5px 0;
-	padding-left:5px;
-	font-size:13px;
-}*/
 .nomMemBottin {
   border-top: 2px solid white;
   font-size: 14px;
@@ -638,7 +579,6 @@ a.list-group-item.active {
   font-style: normal; }
 .photoMembre {
   float: left;
-  /*width:30%;*/
   margin: 0 1em 0 0; }
 
 .photoMembre img {
@@ -653,11 +593,6 @@ a.list-group-item.active {
   float: left;
   width: 50%; }
 
-/*.infoMembre
-{
-	float:left;
-	width:62% !important;
-}*/
 .infoMembre {
   width: 100% !important; }
 
@@ -695,7 +630,6 @@ ul.ulMembresComite .vPrenomNomMembre {
   font-weight: bold;
   width: 18em; }
 
-/*.width-site{width:350px !important;}*/
 /****************************************************************************/
 /*                      QUERIES                                            */
 /***************************************************************************/
@@ -709,8 +643,7 @@ ul.ulMembresComite .vPrenomNomMembre {
     padding: 0 1em; }
 
   .infoMembre {
-    float: left;
-    /* width: 100% !important;*/ }
+    float: left; }
 
   .tabBottinMembre {
     width: 92%;

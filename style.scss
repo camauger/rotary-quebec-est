@@ -62,6 +62,12 @@ a.logo img {
 //     padding-left: 40px;
 //   }
 
+ a.btn {
+	padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+ }
+
   a:not(.btn) {
     border-bottom: solid 3px transparent;
     padding-left: 6px;
@@ -76,7 +82,6 @@ a.logo img {
     background: $primary;
     border-radius: 4px;
     color: white !important;
-    //margin: 0 !important;
   }
 
   .btn {
@@ -119,12 +124,12 @@ h4 {
 h1 {
   font-size: 2.5em;
   color: $primary;
-  margin: 0.75em 0;
+ // margin: 0.75em 0;
   font-family: "museo_slab500";
 }
 h2 {
   color: $primary;
-  margin: 0.75em 0;
+ // margin: 0.75em 0;
   font-family: "museo_slab300";
 }
 
@@ -155,20 +160,16 @@ a.list-group-item {
   color: #555;
 }
 
-.input-lg,
-.btn,
-.btn-lg {
-  border-radius: 3px;
-}
-.bold {
-  font-family: "museo_slab700";
-}
-.alignright {
-  float: right;
-}
-.alignleft {
-  float: left;
-}
+// .input-lg,
+// .btn,
+// .btn-lg {
+//   border-radius: 3px;
+// }
+// .bold {
+//   font-family: "museo_slab700";
+// }
+
+
 .margin-bottom-2 {
   margin-bottom: 2em;
 }
@@ -185,112 +186,8 @@ a.list-group-item {
   margin-top: 2em;
 }
 
-/*------------------------------*/
-/*-------- bouton --------------*/
-.btn {
-  transition-duration: 0.3s;
-}
-.btn-primary {
-  border: 1px solid #02a3de;
-  background: #02adea;
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
-  text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.15);
-  color: #fff;
-}
-.btn-primary:hover {
-  border: 1px solid #02a3de;
-  background: #09bdfd;
-}
-.btn-success {
-  border: 1px solid #2fab41;
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
-}
-.btn-success:hover {
-  border: 1px solid #2fab41;
-  background: #41cb56;
-}
-.btn-bleu {
-  border: solid 1px #e8e8e8;
-  border-radius: 4px;
-  color: #fff !important;
-  padding: 0.5em 0.75em;
-  font-size: 0.85em !important;
-  font-family: Arial, Helvetica, sans-serif;
-  background: rgba(29, 70, 173, 1);
-  background: -moz-linear-gradient(
-    top,
-    rgba(29, 70, 173, 1) 0%,
-    rgba(50, 72, 128, 1) 100%
-  );
-  background: -webkit-gradient(
-    left top,
-    left bottom,
-    color-stop(0%, rgba(29, 70, 173, 1)),
-    color-stop(100%, rgba(50, 72, 128, 1))
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgba(29, 70, 173, 1) 0%,
-    rgba(50, 72, 128, 1) 100%
-  );
-  background: -o-linear-gradient(
-    top,
-    rgba(29, 70, 173, 1) 0%,
-    rgba(50, 72, 128, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    top,
-    rgba(29, 70, 173, 1) 0%,
-    rgba(50, 72, 128, 1) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(29, 70, 173, 1) 0%,
-    rgba(50, 72, 128, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d46ad', endColorstr='#324880', GradientType=0 );
-
-  border-bottom: solid 3px #ffdd3c;
-  margin: 1em 0;
-}
-
-.btn-bleu:hover {
-  text-decoration: none;
-
-  background: rgba(62, 90, 165, 1);
-  background: -moz-linear-gradient(
-    top,
-    rgba(62, 90, 165, 1) 0%,
-    rgba(29, 70, 173, 1) 100%
-  );
-  background: -webkit-gradient(
-    left top,
-    left bottom,
-    color-stop(0%, rgba(62, 90, 165, 1)),
-    color-stop(100%, rgba(29, 70, 173, 1))
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgba(62, 90, 165, 1) 0%,
-    rgba(29, 70, 173, 1) 100%
-  );
-  background: -o-linear-gradient(
-    top,
-    rgba(62, 90, 165, 1) 0%,
-    rgba(29, 70, 173, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    top,
-    rgba(62, 90, 165, 1) 0%,
-    rgba(29, 70, 173, 1) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(62, 90, 165, 1) 0%,
-    rgba(29, 70, 173, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e5aa5', endColorstr='#1d46ad', GradientType=0 );
-}
+// Buttons
+@import "./styles/buttons";
 
 .a.list-group-item.active:hover,
 a.list-group-item.active {
@@ -417,7 +314,7 @@ a.list-group-item.active {
 .rt-box-index {
   background: #fff;
   border: 1px solid #d6dcee;
-  padding: 0.5em 1em; /*min-height: 569px;*/
+  padding: 0.5em 1em;
 }
 .rt-box-index h4 {
   color: #02206f;
@@ -480,17 +377,17 @@ a.list-group-item.active {
 
 /***************************************************************************/
 
-/*.rt-brand { height: 70px; }*/
-.navbar-default .navbar-nav > li > a {
-  padding: 8px 15px;
-  font-weight: bold;
-  font-size: 1em;
-  color: #02206f;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #4762aa;
-}
+
+// .navbar-default .navbar-nav > li > a {
+//   padding: 8px 15px;
+//   font-weight: bold;
+//   font-size: 1em;
+//   color: #02206f;
+// }
+// .navbar-default .navbar-nav > li > a:hover,
+// .navbar-default .navbar-nav > li > a:focus {
+//   color: #4762aa;
+// }
 .rt-navbar .rt-join {
   margin: 0 0 0 1em !important;
   border-radius: 3px;
@@ -605,140 +502,14 @@ a.list-group-item.active {
   border: 0;
 }
 
-/****************************************************************************/
+// Bottin
+@import "./styles/bottin";
 
-/*                     BOTTIN                                              */
-
-/***************************************************************************/
-
-/*
-.tabBottinMembre {
-	border-radius:4px;
-    border: 1px solid #ccc;
-    float: left;
-    font-size: 11px !important;    
-    min-height: 135px;
-    padding: 0 0 1em;
-    width: 325px;
-	margin:0 auto 1em auto;
-}
-.tabBottinMembre  p
-{
-	font-size:11px;
-}*/
-.noPageAlign {
-  text-align: center;
-  font-size: 12px;
-}
-/*.photoMembre
-{
-	width:116px;
-	height:130px;
-	float:left;
-	border-left:2px solid white;
-	border-top:2px solid white;
-	border-bottom:2px solid white;
-}
-.infoMembre
-{
-	float:right;
-	width:205px;
-}
-.infoMembre p
-{
-	margin:10px 0 5px 0;
-	padding-left:5px;
-	font-size:13px;
-}*/
-.nomMemBottin {
-  border-top: 2px solid white;
-  font-size: 14px;
-  background: $primary;
-  color: #fff;
-  font-weight: bold;
-  min-height: 25px;
-  text-align: center;
-  padding-top: 5px;
-  font-size: 13px;
-}
-.PageActuelle {
-  font-weight: bold;
-  font-size: 12px;
-}
-.lienPage {
-  margin: 0 5px 0 0;
-}
-
-/* Slider owl.js */
-#owl-demo .item img {
-  display: block;
-  width: 100%;
-}
-.block {
-  display: block;
-}
-.none {
-  display: none;
-}
-
-.citejoie-video iframe {
-  float: left;
-}
-
-/****************************************************************************/
-/*                       font face                                         */
-/***************************************************************************/
-/* Generated by Font Squirrel (http://www.fontsquirrel.com) on January 14, 2015 */
-@font-face {
-  font-family: "museo_slab300_italic";
-  src: url("fonts/museo_slab_300italic-webfont.eot");
-  src: url("fonts/museo_slab_300italic-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("fonts/museo_slab_300italic-webfont.woff2") format("woff2"),
-    url("fonts/museo_slab_300italic-webfont.woff") format("woff"),
-    url("fonts/museo_slab_300italic-webfont.ttf") format("truetype"),
-    url("fonts/museo_slab_300italic-webfont.svg#museo_slab300_italic")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "museo_slab500";
-  src: url("fonts/museo_slab_2-webfont.eot");
-  src: url("fonts/museo_slab_2-webfont.eot?#iefix") format("embedded-opentype"),
-    url("fonts/museo_slab_2-webfont.woff2") format("woff2"),
-    url("fonts/museo_slab_2-webfont.woff") format("woff"),
-    url("fonts/museo_slab_2-webfont.ttf") format("truetype"),
-    url("fonts/museo_slab_2-webfont.svg#museo_slab500") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "museo_slab300";
-  src: url("fonts/museo_slab_1-webfont.eot");
-  src: url("fonts/museo_slab_1-webfont.eot?#iefix") format("embedded-opentype"),
-    url("fonts/museo_slab_1-webfont.woff2") format("woff2"),
-    url("fonts/museo_slab_1-webfont.woff") format("woff"),
-    url("fonts/museo_slab_1-webfont.ttf") format("truetype"),
-    url("fonts/museo_slab_1-webfont.svg#museo_slab300") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "museo_slab700";
-  src: url("fonts/museo_slab_0-webfont.eot");
-  src: url("fonts/museo_slab_0-webfont.eot?#iefix") format("embedded-opentype"),
-    url("fonts/museo_slab_0-webfont.woff2") format("woff2"),
-    url("fonts/museo_slab_0-webfont.woff") format("woff"),
-    url("fonts/museo_slab_0-webfont.ttf") format("truetype"),
-    url("fonts/museo_slab_0-webfont.svg#museo_slab700") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+// Fonts
+@import "./styles/fonts";
 
 .photoMembre {
   float: left;
-  /*width:30%;*/
   margin: 0 1em 0 0;
 }
 .photoMembre img {
@@ -753,11 +524,7 @@ a.list-group-item.active {
   float: left;
   width: 50%;
 }
-/*.infoMembre
-{
-	float:left;
-	width:62% !important;
-}*/
+
 .infoMembre {
   width: 100% !important;
 }
@@ -799,12 +566,7 @@ ul.ulMembresComite .vPrenomNomMembre {
   font-weight: bold;
   width: 18em;
 }
-ul.ulMembresCA .vRoleCA {
-}
-ul.ulComites {
-}
 
-/*.width-site{width:350px !important;}*/
 /****************************************************************************/
 
 /*                      QUERIES                                            */
@@ -823,7 +585,7 @@ ul.ulComites {
   }
   .infoMembre {
     float: left;
-    /* width: 100% !important;*/
+
   }
   .tabBottinMembre {
     width: 92%;

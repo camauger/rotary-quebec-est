@@ -34,7 +34,7 @@
                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facebook-foot.png" />
                                </a>
                                <div class="row theme-rotary">
-                                   <p><img class="alignnone size-full wp-image-721" src="https://rotary-quebecest.org/contenu/wp-content/uploads/2019/12/rotary-connecte-mond.png" alt="Le Rotary connecte le monde" title="Le Rotary connecte le monde" width="125" height="127"></p>
+                                   <img class="" src="https://rotary-quebecest.org/contenu/wp-content/uploads/2019/12/rotary-connecte-mond.png" alt="Le Rotary connecte le monde" title="Le Rotary connecte le monde">
 
                                </div> <?php endwhile;
                                         endif; ?>

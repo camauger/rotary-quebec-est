@@ -46,8 +46,8 @@ $the_query_xs = new WP_Query($args);
         <div class="col-md-7">
             <div class="facebook__container">
                 <h3>En bref sur <strong>Facebook</strong></h3>
-
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FClubRotaryQuebecEst%2Fposts%2F2159444704156808&width=500" width="500" height="732" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<?php echo $post->$facebook ; ?>
+               
             </div>
         </div>
         <div class="col-md-5">

@@ -113,7 +113,8 @@ section.container {
 
 h1, h2, h3, h4 {
   font-family: "museo_slab500" !important;
-  color: #00246c; }
+  color: #00246c;
+  margin-bottom: 24px; }
 
 .list-group a {
   border: 1px solid #ddd;

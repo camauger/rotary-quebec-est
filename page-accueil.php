@@ -51,11 +51,11 @@ $the_query_xs = new WP_Query($args);
     </div>
 </div><!-- container -->
 
-<div class="container">
+<section class="container">
     <div class="row">
         <div class="col-md-7">
-            <div class="">
-                <h3>En bref sur <span class="bold">Facebook</span></h3>
+            <div class="facebook__container">
+                <h3>En bref sur <strong>Facebook</strong></h3>
                 <div class="fb-post" data-href="https://www.facebook.com/115076485260317/posts/<?php echo esc_html($post->facebook) ?>" data-width="">
                     <!-- leave data-width empty to use fluid width -->
                 </div>
@@ -70,7 +70,7 @@ $the_query_xs = new WP_Query($args);
         </div>
 
     </div>
-</div>
+</section>
 <!-- container -->
 <div class="container-fluid fluid-bg-cite-joie">
     <div class="container">

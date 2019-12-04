@@ -9,6 +9,8 @@ Version: 1.0
 
 //* Polices de caractères */
 
+@import "./styles/fonts";
+
 @font-face {
   font-family: "Helvetica Neue";
   src: local("Open Sans");
@@ -30,10 +32,12 @@ Version: 1.0
 
 $body-background: #fff;
 $darker-blue: #00246c;
-$primary: #1d387d;
+$lighter-blue: #1d387d;
+$primary: $darker-blue;
 $the-yellow: #febd11;
 $secondary: $the-yellow;
 $the-grey: #ebebeb;
+$darker-grey: #ccc;
 //* Images */
 img {
   max-width: 100%;
@@ -54,13 +58,14 @@ a {
 
 
 //** Menus */
-$menu-background-color: #f8f8f8;
+$menu-background-color: $the-grey;
 $menu-border-color: #e7e7e7;
 
 .wrapper--nav {
   padding-top: 20px;
   width: 100%;
   background-color: $menu-background-color;
+  box-shadow: 0px 0px 8px 2px $darker-grey;
 }
 a.logo img {
   padding-right: 30px;
@@ -107,6 +112,11 @@ a.logo img {
 
 //** Spacing */
 
+section.container {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
 .wrapper--page {
   margin-top: 30px;
 }
@@ -126,20 +136,24 @@ a.logo img {
   height: 100%;
 }
 
+
+h1, h2, h3, h4 {
+	font-family: "museo_slab500";
+}
 h3,
 h4 {
   margin: 0.5em 0;
   color: $darker-blue;
-  font-family: "museo_slab500";
+  
 }
 h1 {
   font-size: 2.5em;
   color: $primary;
-  font-family: "museo_slab500";
+  
 }
 h2 {
   color: $primary;
-  font-family: "museo_slab300";
+ 
 }
 
 
@@ -240,116 +254,9 @@ a.list-group-item.active {
   border-radius: 4px;
 }
 
-/****************************************************************************/
+// Homepage
+@import "./styles/home";
 
-/*                     ACCUEIL                                              */
-
-/***************************************************************************/
-
-.bg-gris {
-  background: $the-grey;
-}
-.out-citation {
-  margin: 1em 0;
-  overflow: hidden;
-}
-.out-nouvelle {
-  margin: 0 0 1em 0;
-  overflow: hidden;
-  padding: 1em 0.75em 0 0;
-  border: solid 1px #f2f2f2;
-  background: #fafafa;
-}
-.text-citation p {
-  font-family: "museo_slab300";
-  margin: 0.5em 0 0;
-}
-.citation-evidence {
-  border-bottom: solid 3px $the-yellow;
-  font-family: "museo_slab700";
-  margin: 0 0.5em;
-}
-.citation-accueil {
-  text-align: center;
-  font-family: "museo_slab300";
-  font-size: 1.2em;
-  padding: 0.75em 0;
-}
-.fluid-bg-cite-joie {
-  background: #fafafa;
-
-  margin: 1em 0;
-}
-.promo-cite-joie {
-  padding: 1em 0;
-  overflow: hidden;
-}
-.promo-cite-joie p {
-  font-family: "museo_slab300";
-}
-.promo-cite-joie img {
-  margin: 0 1em 0 0;
-}
-.rt-box-index {
-  background: #fff;
-  border: 1px solid #d6dcee;
-  padding: 0.5em 1em;
-}
-.rt-box-index h4 {
-  color: #02206f;
-  font-weight: bold;
-  font-size: 15px;
-  margin: 0 0 20px 0;
-  padding-bottom: 20px;
-  border-bottom: 1px dashed #02206f;
-}
-.rt-box-index p {
-  margin-bottom: 20px;
-}
-.rt-box-index .btn-default {
-  font-weight: bold;
-  color: #fff;
-  background: #0058a3;
-}
-
-.une-nouvelle {
-  margin: 0 0 1em 0;
-  border: solid 1px #e8e8e8;
-  border-radius: 4px;
-  padding: 1em;
-  overflow: hidden;
-}
-
-.dateacc-news {
-  font-size: 0.8em !important;
-  font-style: italic;
-}
-.une-nouvelle-acc {
-  margin-bottom: 1em;
-  border-bottom: solid 1px #e8e8e8;
-  padding-bottom: 1em;
-}
-.une-nouvelle-acc:last-child {
-  border-bottom: none;
-}
-
-.rt-box-index h5 {
-  font-weight: bold;
-}
-.rt-box-index .boite_texteBulletin {
-  border-bottom: solid 1px #ccc;
-  padding-bottom: 1em;
-}
-.rt-box-index .boite_texteBulletin:last-child {
-  border-bottom: none;
-}
-.rt-box-index .boite_texteBulletin .btn-default a {
-  color: #fff !important;
-  font-size: 0.75em;
-}
-.rt-box-index .boite_texteBulletin p {
-  margin-bottom: 10px;
-}
 /****************************************************************************/
 
 /*                    	          Menu                                     */
@@ -468,9 +375,6 @@ a.list-group-item.active {
 
 // Bottin
 @import "./styles/bottin";
-
-// Fonts
-@import "./styles/fonts";
 
 .photoMembre {
   float: left;

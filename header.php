@@ -28,43 +28,42 @@
 
 
 <body <?php body_class(); ?>>
-<div class="wrapper--nav">
-    
-<div class="container">
-<nav class="navbar navbar-expand-lg">
-        <a class="logo" href="<?php echo home_url(); ?>">
-                                    <img class="d-inline-block align-top" src="<?php echo get_template_directory_uri(); ?>/images/rotary-qcest-logo-full.png" alt="Rotary - Club de Québec-Est">
+    <div class="wrapper--nav">
 
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="logo" href="<?php echo home_url(); ?>">
+                    <img class="d-inline-block align-top" src="<?php echo get_template_directory_uri(); ?>/images/rotary-qcest-logo-full.png" alt="Rotary - Club de Québec-Est">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto menu-principal">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://rotary-quebecest.org/le-club/mot-du-president/">Le club</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://rotary-quebecest.org/mission-et-objectifs/mission/">Missions et objectifs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://rotary-quebecest.org/activites/calendrier/">Activités</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://rotary-quebecest.org/fr/membres/bottin.php">Bottin</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://rotary-quebecest.org/contact">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn" href="https://rotary-quebecest.org/fr/_new/demande_adhesion.php">Devenir membre</a>
-                </li>
-            </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto menu-principal">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://rotary-quebecest.org/le-club/mot-du-president/">Le club</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://rotary-quebecest.org/mission-et-objectifs/mission/">Missions et objectifs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://rotary-quebecest.org/activites/calendrier/">Activités</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://rotary-quebecest.org/fr/membres/bottin.php">Bottin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://rotary-quebecest.org/contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn" href="https://rotary-quebecest.org/fr/_new/demande_adhesion.php">Devenir membre</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </nav>
-</div>
-</div>
+    </div>
 
 
 

@@ -33,24 +33,23 @@
                                <a href="https://www.facebook.com/pages/Club-Rotary-Qu%C3%A9bec-Est/115076485260317" target="_blank">
                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facebook-foot.png" />
                                </a>
-                               <div class="row theme-rotary">
-                                   <img class="" src="https://rotary-quebecest.org/contenu/wp-content/uploads/2019/12/rotary-connecte-mond.png" alt="Le Rotary connecte le monde" title="Le Rotary connecte le monde">
 
-                               </div> <?php endwhile;
-                                        endif; ?>
-                   </div><!-- -->
-               </div>
-               <div class="row text-align-center reserve ">
-                   <div class="padding-top-1">
-                       <p>Tous droits réservés &copy; <?php echo date('Y'); ?> <?php echo bloginfo('name'); ?></p>
+                               <img class="logoFooter" src="https://rotary-quebecest.org/contenu/wp-content/uploads/2019/12/rotary-connecte-mond.png" alt="Le Rotary connecte le monde" title="Le Rotary connecte le monde">
+
+                               < <?php endwhile;
+                                    endif; ?> </div> <!-- -->
                    </div>
-               </div><!-- -->
+                   <div class="copyright">
+                       
+                           <p>Tous droits réservés &copy; <?php echo date('Y'); ?> <?php echo bloginfo('name'); ?></p>
+                       
+                   </div><!-- -->
 
 
 
-           </div><!-- innner -->
-       </div>
-       <!--container  -->
+               </div><!-- innner -->
+           </div>
+           <!--container  -->
 
    </footer>
 

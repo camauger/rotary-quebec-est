@@ -180,10 +180,10 @@ add_filter('the_content_more_link', 'more');
 
 
 // Remove Admin bar
-function remove_admin_bar()
-{
-    return false;
-}
+// function remove_admin_bar()
+// {
+//     return false;
+// }
 
 // Remove thumbnail width and height dimensions that prevent fluid images in the_thumbnail
 function remove_thumbnail_dimensions( $html )
@@ -265,13 +265,6 @@ function aucunArticle() // Demo Heading H2 shortcode, allows for nesting within 
 add_shortcode('aucunArticle', 'aucunArticle');
 
 
-/**********************************************************************************************************************************
-***********************************************************************************************************************************
-*
-* Oui, Annne-Marie, c'est à toi que je parle, ci-dessous tu découvriras les astuces pour persnonnaliser le tableau de bord
-*
-***********************************************************************************************************************************
-**********************************************************************************************************************************/
 
 /*
 Enlever les menus non nécessaires pour le profil éditeur

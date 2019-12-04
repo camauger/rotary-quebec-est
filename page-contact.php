@@ -1,6 +1,6 @@
 <?php
 	/*
-	Template Name: Page - Missions et objectifs
+	Template Name: Page - Contact
 	*/
 ?>
 <?php get_header(); ?>

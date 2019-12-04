@@ -1,1 +1,0 @@
-<p><strong>Quatre &laquo;&nbsp;voies de service&nbsp;&raquo; dirigent les activit&eacute;s du Club Rotary de Qu&eacute;bec en conformit&eacute; avec le Rotary International.</strong></p>

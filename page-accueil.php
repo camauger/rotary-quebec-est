@@ -47,7 +47,7 @@ $the_query_xs = new WP_Query($args);
             <div class="facebook__container">
                 <h3>En bref sur <strong>Facebook</strong></h3>
 
-                <div class="fb-post" data-href="https://www.facebook.com/115076485260317/posts/2159444704156808" data-width="500" data-show-text="true"><blockquote cite="https://developers.facebook.com/ClubRotaryQuebecEst/posts/2159444704156808" class="fb-xfbml-parse-ignore"></div>
+                <div class="fb-post" data-href="https://www.facebook.com/115076485260317/posts/'<?php echo esc_html($post->facebook) ?>'" data-width="500" data-show-text="true"><blockquote cite="https://developers.facebook.com/ClubRotaryQuebecEst/posts/2159444704156808" class="fb-xfbml-parse-ignore"></div>
             </div>
         </div>
         <div class="col-md-5">

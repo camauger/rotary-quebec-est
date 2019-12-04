@@ -74,11 +74,10 @@ a.logo img {
   background-color: #ebebeb;
   padding-left: 40px; }
   .menu-principal a {
+    color: #00246c !important;
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: 700; }
-  .menu-principal a.btn {
-    color: #00246c !important; }
   .menu-principal a:not(.btn) {
     border-bottom: solid 3px transparent;
     padding-left: 6px;

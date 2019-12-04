@@ -81,14 +81,13 @@ a.logo img {
   //     padding-left: 40px;
   //   }
   a {
-    
+    color: $darker-blue!important;
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: 700;
   }
 
   a.btn {
-	color: $darker-blue!important;
   }
 
   a:not(.btn) {

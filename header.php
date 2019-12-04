@@ -31,15 +31,7 @@
 
     <div id="fb-root"></div>
     <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-    <!-- facebook connect -->
-    <script>
-        window.fbAsyncInit = function() {
-            FB.init({
-                xfbml: true,
-                version: 'v5.0'
-            });
-        };
-    </script>
+
 
     <div class="wrapper--nav">
 

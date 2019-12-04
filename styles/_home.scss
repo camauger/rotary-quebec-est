@@ -16,9 +16,12 @@
   background: $the-grey;
 }
 .homepage__3col {
-    background: #fff;
+    div {
+        padding: 10px;
+        background: #fff;
     border: 1px solid #d6dcee;
     border-radius: 4px;
+    }
 }
 
 .out-citation {

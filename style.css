@@ -300,7 +300,8 @@ a.list-group-item.active {
 .bg-gris {
   background: #ebebeb; }
 
-.homepage__3col {
+.homepage__3col div {
+  padding: 10px;
   background: #fff;
   border: 1px solid #d6dcee;
   border-radius: 4px; }

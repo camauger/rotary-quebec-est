@@ -46,7 +46,7 @@ $the_query_xs = new WP_Query($args);
         <div class="col-md-7">
             <div class="facebook__container">
                 <h3>En bref sur <strong>Facebook</strong></h3>
-<?php echo sc_html($post->$facebook) ?>
+<?php echo esc_html($post->$facebook) ?>
                
             </div>
         </div>

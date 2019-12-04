@@ -83,7 +83,7 @@ $the_query_xs = new WP_Query($args);
     </div>
 </div>
 <div class="container">
-    <div class="row">
+    <div class="row homepage__3col">
         <div class="col-md-4">
             <p><a href="https://rotary-quebecest.org/"><img class="alignnone size-full wp-image-421" src="https://rotary-quebecest.org/contenu/wp-content/uploads/2015/01/Logo-Rotary-vignette-web.jpg" alt="Logo-Rotary-vignette-web" srcset="https://rotary-quebecest.org/contenu/wp-content/uploads/2015/01/Logo-Rotary-vignette-web.jpg 240w, https://rotary-quebecest.org/contenu/wp-content/uploads/2015/01/Logo-Rotary-vignette-web-120x80.jpg 120w" sizes="(max-width: 240px) 100vw, 240px"></a></p>
             <p><b>Club Rotary Québec-Est</b></p>

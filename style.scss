@@ -39,6 +39,20 @@ img {
   max-width: 100%;
 }
 
+// Body
+
+body {
+	background: $body-background;
+	font-size: 16px;
+  }
+
+// Styles de base
+a {
+	color: $primary;
+	outline: none;
+  }
+
+
 //** Menus */
 $menu-background-color: #f8f8f8;
 $menu-border-color: #e7e7e7;
@@ -49,7 +63,7 @@ $menu-border-color: #e7e7e7;
   background-color: $menu-background-color;
 }
 a.logo img {
-	padding-right: 30px;
+  padding-right: 30px;
 }
 
 .menu-principal {
@@ -58,23 +72,24 @@ a.logo img {
   justify-content: space-between;
   background-color: $menu-background-color;
   padding-left: 40px;
-//   @include media-breakpoint-up(md) {
-//     padding-left: 40px;
-//   }
-
- a.btn {
-	padding-top: 10px;
+  //   @include media-breakpoint-up(md) {
+  //     padding-left: 40px;
+  //   }
+  a {
+    
+    padding-top: 10px;
     padding-bottom: 10px;
     font-weight: 700;
- }
+  }
+
+  a.btn {
+	color: $primary;
+  }
 
   a:not(.btn) {
     border-bottom: solid 3px transparent;
     padding-left: 6px;
     padding-right: 6px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-weight: 700;
   }
   a.active:not(.btn),
   a:hover:not(.btn) {
@@ -89,10 +104,6 @@ a.logo img {
   }
 }
 
-body {
-  background: $body-background;
-  font-size: 16px;
-}
 
 //** Spacing */
 
@@ -124,19 +135,14 @@ h4 {
 h1 {
   font-size: 2.5em;
   color: $primary;
- // margin: 0.75em 0;
   font-family: "museo_slab500";
 }
 h2 {
   color: $primary;
- // margin: 0.75em 0;
   font-family: "museo_slab300";
 }
 
-a {
-  color: $primary;
-  outline: none;
-}
+
 p,
 p span,
 li span {
@@ -160,31 +166,6 @@ a.list-group-item {
   color: #555;
 }
 
-// .input-lg,
-// .btn,
-// .btn-lg {
-//   border-radius: 3px;
-// }
-// .bold {
-//   font-family: "museo_slab700";
-// }
-
-
-.margin-bottom-2 {
-  margin-bottom: 2em;
-}
-.margin-bottom-3 {
-  margin-bottom: 3em;
-}
-.margin-bottom-1 {
-  margin-bottom: 1em;
-}
-.margin-top-1 {
-  margin-top: 1em;
-}
-.margin-top-2 {
-  margin-top: 2em;
-}
 
 // Buttons
 @import "./styles/buttons";
@@ -225,9 +206,7 @@ a.list-group-item.active {
 // Footer
 @import "./styles/footer";
 
-.reserve {
-  border-top: solid 1px #515151;
-}
+
 
 .un-programme-resume {
   margin: 2em 0 2em 0;
@@ -377,17 +356,6 @@ a.list-group-item.active {
 
 /***************************************************************************/
 
-
-// .navbar-default .navbar-nav > li > a {
-//   padding: 8px 15px;
-//   font-weight: bold;
-//   font-size: 1em;
-//   color: #02206f;
-// }
-// .navbar-default .navbar-nav > li > a:hover,
-// .navbar-default .navbar-nav > li > a:focus {
-//   color: #4762aa;
-// }
 .rt-navbar .rt-join {
   margin: 0 0 0 1em !important;
   border-radius: 3px;
@@ -398,16 +366,12 @@ a.list-group-item.active {
 .rt-navbar .rt-join:hover {
   background: #ffdd3c;
 }
-.navbar {
-  border-radius: 0;
-}
+
 .navbar-default {
   background-color: $the-grey;
   border: none;
 }
-.navbar-brand {
-  height: auto;
-}
+
 .navbar-toggle {
   margin-top: 36px;
 }
@@ -585,7 +549,6 @@ ul.ulMembresComite .vPrenomNomMembre {
   }
   .infoMembre {
     float: left;
-
   }
   .tabBottinMembre {
     width: 92%;
@@ -594,9 +557,7 @@ ul.ulMembresComite .vPrenomNomMembre {
   .infoMembre {
     width: 100% !important;
   }
-  h1 {
-    font-size: 2em;
-  }
+
   .tdbottin {
     width: 100% !important;
   }

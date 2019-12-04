@@ -44,9 +44,9 @@ $the_query_xs = new WP_Query($args);
 <section class="container">
     <div class="row">
         <div class="col-md-7">
-            <div class="facebook__container">
+            <blockquote class="facebook__container">
                 <h3>En bref sur <strong>Facebook</strong></h3>
-<?php echo esc_html($post->$facebook) ?>
+                <blockquote class="fb-post" data-href="https://www.facebook.com/ClubRotaryQuebecEst/posts/'<?php get_post_meta($facebook) ?>'" data-width="500" data-show-text="true"><blockquote cite="https://developers.facebook.com/ClubRotaryQuebecEst/posts/'<?php get_post_meta($facebook) ?>'" class="fb-xfbml-parse-ignore"><p>Nous avons le privilège et la chance de recevoir Chloé Sainte-Marie au Club. Elle nous a laissé d&#039;excellents souvenirs...</p>Publié par <a href="https://www.facebook.com/ClubRotaryQuebecEst/">Club Rotary Québec-Est</a> sur&nbsp;<a href="https://developers.facebook.com/ClubRotaryQuebecEst/posts/'<?php get_post_meta($facebook) ?>'">Vendredi 29 novembre 2019</a></blockquote></blockquote>
                
             </div>
         </div>

@@ -17,6 +17,18 @@ $the_query_xs = new WP_Query($args);
 
 <?php get_header(); ?>
 
+<!-- facebook connect -->
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml: true,
+            version: 'v5.0'
+        });
+    };
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+
 <div class="jumbotron">
     <div class="container">
         <?php if (has_post_thumbnail()) {
@@ -26,10 +38,10 @@ $the_query_xs = new WP_Query($args);
 </div>
 
 
-<div class="container-fluid bg-gris margin-top-1 margin-bottom-3">
+<div class="bg-gris">
     <div class="container">
         <div class="row">
-            <div class="col-md-11">
+            <div class="col">
                 <div class="citation-accueil">
                     <?php $args = array('name' => 'vue-citations');
                     echo render_view($args); ?>
@@ -44,23 +56,6 @@ $the_query_xs = new WP_Query($args);
         <div class="col-md-7">
             <div class="">
                 <h3>En bref sur <span class="bold">Facebook</span></h3>
-
-                <!-- <div class="fb-page" data-href="https://www.facebook.com/ClubRotaryQuebecEst/" data-tabs="timeline" data-width="500px" data-height="100%" data-small-header="true" data-hide-cta="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false">
-                    <blockquote cite="https://www.facebook.com/ClubRotaryQuebecEst/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ClubRotaryQuebecEst/">Club Rotary Québec-Est</a></blockquote>
-                </div> -->
-
-                <script>
-                    window.fbAsyncInit = function() {
-                        FB.init({
-                            xfbml: true,
-                            version: 'v5.0'
-                        });
-                    };
-                </script>
-                <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
-
-
-
                 <div class="fb-post" data-href="https://www.facebook.com/115076485260317/posts/<?php echo esc_html($post->facebook) ?>" data-width="">
                     <!-- leave data-width empty to use fluid width -->
                 </div>
@@ -94,12 +89,10 @@ $the_query_xs = new WP_Query($args);
     </div>
 </div>
 <div class="container">
-    <!-- ******** 3 colonnes ********* -->
-    <div class="col-md-12">
+    <div class="col-12">
         <?php $args = array('name' => 'vue-3colonnes-pinterieures');
         echo render_view($args); ?>
     </div>
-    <!--  // ******** 3 colonnes ********* -->
 </div>
 </div>
 

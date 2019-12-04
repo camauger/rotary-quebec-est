@@ -115,10 +115,6 @@ h1, h2, h3, h4 {
   font-family: "museo_slab500" !important;
   color: #00246c; }
 
-li {
-  margin: 0 0 0.75em 0 !important;
-  font-family: Verdana, Geneva, sans-serif !important; }
-
 .list-group a {
   border: 1px solid #ddd;
   display: block !important;
@@ -295,8 +291,10 @@ a.list-group-item.active {
 /****************************************************************************/
 /*                     ACCUEIL                                              */
 /***************************************************************************/
-.facebook__container h3 {
-  margin-bottom: 16px; }
+.facebook__container {
+  margin-bottom: 30px; }
+  .facebook__container h3 {
+    margin-bottom: 16px; }
 
 .bg-gris {
   background: #ebebeb; }

@@ -63,8 +63,8 @@ $the_query_xs = new WP_Query($args);
         </div>
         <div class="col-md-5">
             <div class="">
+            <h3><?php echo esc_html($post->blocTitre) ?></h3>
                 <img src="<?php echo esc_html($post->blocImage) ?>" alt="Nous passons à l'action">
-                <h3 class="margin-bottom-1"><?php echo esc_html($post->blocTitre) ?></h3>
                 <p><?php echo esc_html($post->blocTexte) ?></p>
             </div>
         </div>

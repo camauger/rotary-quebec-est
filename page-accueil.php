@@ -41,7 +41,7 @@ $the_query_xs = new WP_Query($args);
 
 <div class="container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-7">
             <div class="">
                 <h3>En bref sur <span class="bold">Facebook</span></h3>
 
@@ -66,7 +66,7 @@ $the_query_xs = new WP_Query($args);
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-5">
             <div class="">
                 <img src="<?php echo esc_html($post->blocImage) ?>" alt="Nous passons à l'action">
                 <h3 class="margin-bottom-1"><?php echo esc_html($post->blocTitre) ?></h3>

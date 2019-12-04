@@ -45,6 +45,7 @@ $menu-background-color: #f8f8f8;
 $menu-border-color: #e7e7e7;
 
 .wrapper--nav {
+	padding-top: 20px;
   width: 100%;
   background-color: $menu-background-color;
 }
@@ -57,11 +58,16 @@ a.logo img {
   width: 100%;
   justify-content: space-between;
   background-color: $menu-background-color;
+  
+  @include media-breakpoint-up(md) { padding-left: 40px; }
 
   a:not(.btn) {
     border-bottom: solid 3px transparent;
     padding-left: 6px;
-    padding-right: 6px;
+	padding-right: 6px;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
   }
   a.active:not(.btn),
   a:hover:not(.btn) {

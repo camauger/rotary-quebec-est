@@ -33,7 +33,6 @@ Version: 1.0
 $body-background: #fff;
 $darker-blue: #00246c;
 $lighter-blue: #1d387d;
-$primary: $darker-blue;
 $the-yellow: #febd11;
 $secondary: $the-yellow;
 $the-grey: #ebebeb;
@@ -53,7 +52,7 @@ body {
 
 // Styles de base
 a {
-	color: $primary;
+	color: $darker-blue;
 	outline: none;
   }
 
@@ -89,7 +88,7 @@ a.logo img {
   }
 
   a.btn {
-	color: $primary;
+	color: $darker-blue;
   }
 
   a:not(.btn) {
@@ -100,7 +99,7 @@ a.logo img {
   a.active:not(.btn),
   a:hover:not(.btn) {
     border-bottom: solid 3px $the-yellow;
-    background: $primary;
+    background: $darker-blue;
     border-radius: 4px;
     color: white !important;
   }
@@ -140,7 +139,7 @@ section.container {
 
 h1, h2, h3, h4 {
 	font-family: "museo_slab500"!important;
-	color: $primary;
+	color: $darker-blue;
 }
 
 
@@ -269,7 +268,7 @@ a.list-group-item.active {
 }
 .current-menu-item {
   border-bottom: solid 3px $the-yellow;;
-  background: $primary !important;
+  background: $darker-blue !important;
   border-radius: 4px;
   margin: 0 !important;
 }
@@ -278,7 +277,7 @@ a.list-group-item.active {
   color: #fff !important;
 }
 .rt-aside a:hover {
-  background: $primary !important;
+  background: $darker-blue !important;
   color: #fff !important;
   text-decoration: none;
 }
@@ -290,7 +289,7 @@ a.list-group-item.active {
 }
 
 #SousMenuSelect {
-  background: $primary;
+  background: $darker-blue;
   color: #fff;
   border-bottom: solid 5px #ffdd3c;
 }
@@ -301,13 +300,13 @@ a.list-group-item.active {
   margin-bottom: 1em;
 }
 .button:hover {
-  background: $primary;
+  background: $darker-blue;
   color: #fff;
 }
 .button {
   margin: 1em 0;
   background: #ffdd3c;
-  color: $primary;
+  color: $darker-blue;
   padding: 0.5em 1em;
   border-radius: 4px;
   border: solid 1px #ffdd3c;

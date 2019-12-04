@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'media-breakpoint-up'.
-        on line 62 of style.scss, in `media-breakpoint-up'
-        from line 62 of style.scss
+        on line 61 of style.scss, in `media-breakpoint-up'
+        from line 61 of style.scss
 
-57:   display: flex;
-58:   width: 100%;
-59:   justify-content: space-between;
-60:   background-color: $menu-background-color;
-61:   
-62:   @include media-breakpoint-up(md) { padding-left: 40px; }
-63: 
-64:   a:not(.btn) {
-65:     border-bottom: solid 3px transparent;
-66:     padding-left: 6px;
-67: 	padding-right: 6px;
+56:   display: flex;
+57:   width: 100%;
+58:   justify-content: space-between;
+59:   background-color: $menu-background-color;
+60: 
+61:   @include media-breakpoint-up(md) {
+62:     padding-left: 40px;
+63:   }
+64: 
+65:   a:not(.btn) {
+66:     border-bottom: solid 3px transparent;
 
 Backtrace:
-style.scss:62:in `media-breakpoint-up'
-style.scss:62
+style.scss:61:in `media-breakpoint-up'
+style.scss:61
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
@@ -73,4 +73,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'media-breakpoint-up'.\A         on line 62 of style.scss, in `media-breakpoint-up'\A         from line 62 of style.scss\A \A 57:   display: flex;\A 58:   width: 100%;\A 59:   justify-content: space-between;\A 60:   background-color: $menu-background-color;\A 61:   \A 62:   @include media-breakpoint-up(md) { padding-left: 40px; }\A 63: \A 64:   a:not(.btn) {\A 65:     border-bottom: solid 3px transparent;\A 66:     padding-left: 6px;\A 67: 	padding-right: 6px;"; }
+  content: "Error: Undefined mixin 'media-breakpoint-up'.\A         on line 61 of style.scss, in `media-breakpoint-up'\A         from line 61 of style.scss\A \A 56:   display: flex;\A 57:   width: 100%;\A 58:   justify-content: space-between;\A 59:   background-color: $menu-background-color;\A 60: \A 61:   @include media-breakpoint-up(md) {\A 62:     padding-left: 40px;\A 63:   }\A 64: \A 65:   a:not(.btn) {\A 66:     border-bottom: solid 3px transparent;"; }

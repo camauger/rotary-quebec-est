@@ -78,7 +78,7 @@ a.logo img {
     padding-bottom: 10px;
     font-weight: 700; }
   .menu-principal a.btn {
-    color: #00246c; }
+    color: #00246c !important; }
   .menu-principal a:not(.btn) {
     border-bottom: solid 3px transparent;
     padding-left: 6px;

@@ -47,7 +47,7 @@ $the_query_xs = new WP_Query($args);
             <div class="facebook__container">
                 <h3>En bref sur <strong>Facebook</strong></h3>
 
-                <<div class="fb-post" data-href="https://www.facebook.com/115076485260317/posts/2159444704156808" data-width="500" data-show-text="true"><blockquote cite="https://developers.facebook.com/ClubRotaryQuebecEst/posts/2159444704156808" class="fb-xfbml-parse-ignore"><p>Nous avons le privilège et la chance de recevoir Chloé Sainte-Marie au Club. Elle nous a laissé d&#039;excellents souvenirs...</p>Publié par <a href="https://www.facebook.com/ClubRotaryQuebecEst/">Club Rotary Québec-Est</a> sur&nbsp;<a href="https://developers.facebook.com/ClubRotaryQuebecEst/posts/2159444704156808">Vendredi 29 novembre 2019</a></blockquote></div>
+                <div class="fb-post" data-href="https://www.facebook.com/115076485260317/posts/2159444704156808" data-width="500" data-show-text="true"><blockquote cite="https://developers.facebook.com/ClubRotaryQuebecEst/posts/2159444704156808" class="fb-xfbml-parse-ignore"></div>
             </div>
         </div>
         <div class="col-md-5">

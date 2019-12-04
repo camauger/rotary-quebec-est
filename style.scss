@@ -57,10 +57,10 @@ a.logo img {
   width: 100%;
   justify-content: space-between;
   background-color: $menu-background-color;
-
-  @include media-breakpoint-up(md) {
-    padding-left: 40px;
-  }
+  padding-left: 40px;
+//   @include media-breakpoint-up(md) {
+//     padding-left: 40px;
+//   }
 
   a:not(.btn) {
     border-bottom: solid 3px transparent;

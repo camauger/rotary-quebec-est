@@ -300,11 +300,12 @@ a.list-group-item.active {
 .bg-gris {
   background: #ebebeb; }
 
-.homepage__3col div > div {
+.homepage__3col > ┬ádiv > div {
   padding: 10px;
   background: #fff;
   border: 1px solid #d6dcee;
-  border-radius: 4px; }
+  border-radius: 4px;
+  height: 100%; }
 
 .out-citation {
   margin: 1em 0;

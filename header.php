@@ -31,7 +31,7 @@
 <div class="wrapper--nav">
     
 <div class="container">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg">
         <a class="logo" href="<?php echo home_url(); ?>">
                                     <img class="d-inline-block align-top" src="<?php echo get_template_directory_uri(); ?>/images/rotary-qcest-logo-full.png" alt="Rotary - Club de Québec-Est">
 

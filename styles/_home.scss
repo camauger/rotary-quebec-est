@@ -23,6 +23,13 @@
   border: 1px solid #d6dcee;
   border-radius: 4px;
   height: 100%;
+  img {
+      display: block;
+      margin: auto;
+  }
+  b {
+      text-align: center;
+  }
 }
 
 .out-citation {

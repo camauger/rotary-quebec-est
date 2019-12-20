@@ -1,10 +1,8 @@
-
-
 <div class="container">
     <div class="row homepage__3col">
-    
+
         <?php
-       
+
 
         $boxes = get_posts(array(
             'post_type' => 'Boîtes',

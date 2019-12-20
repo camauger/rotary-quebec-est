@@ -706,3 +706,27 @@ function themerotary_redirect_admin()
 }
 
 add_action( 'admin_init', 'themerotary_redirect_admin' );
+
+
+
+// Custom post type function - "3 boîtes"
+function create_threeboxes()
+{
+
+	register_post_type(
+		'Boîtes',
+		// CPT Options
+		array(
+			'labels' => array(
+				'name' => __('Boîtes'),
+				'singular_name' => __('Boîte')
+			),
+			'public' => false,
+			'has_archive' => false,
+			'supports'            => array('title', 'thumbnail', 'revisions', 'custom-fields',),
+		)
+	);
+}
+// Hooking up our function to theme setup
+
+add_action('init', 'create_threeboxes');

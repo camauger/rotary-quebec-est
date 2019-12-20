@@ -18,8 +18,7 @@
                     <a href="<?php echo $url; ?>">
                         <?php echo $image ?>
                         <h3><?php the_title_attribute() ?></h3>
-                        <?php $content = apply_filters('the_content', get_the_content());
-                        echo $content; ?>
+                        
                     </a>
                 </div>
             </div>

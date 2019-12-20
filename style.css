@@ -7,6 +7,9 @@ Author URI: http://prospection.qc.ca
 Description: Th├¿me de Rotary Qu├®bec Est
 Version: 1.0
 */
+.mission {
+  margin-top: 2rem; }
+
 /****************************************************************************/
 /*                       font face                                         */
 /***************************************************************************/
@@ -191,8 +194,7 @@ a.list-group-item.active {
   background: #fff;
   border: 1px solid #d6dcee;
   padding: 1em 2em 3em 2em;
-  overflow: hidden;
-  margin-bottom: 2rem; }
+  overflow: hidden; }
 
 .rt-article h3 {
   margin-top: 10px;

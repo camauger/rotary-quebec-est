@@ -41,7 +41,7 @@
                                                
                             
                     </article>
-                  <div class="row">
+                  <div class="row mission">
                   <?php get_template_part('module-boxes') ; ?>
                   </div>
        			</div>	        

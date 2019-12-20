@@ -1,5 +1,36 @@
 <div class="container">
     <div class="row homepage__3col">
+
+        <?php
+        $boxes = get_posts(array(
+            'post_type' => 'Boîtes',
+            'order' => 'ASC',
+            'showposts' => 3
+        ));
+
+        foreach ($boxes as $post) {
+            $image = get_the_post_thumbnail($post->ID, 'large');
+        ?>
+            <div class="col-md-4">
+                <div class="box--grey">
+
+                    <a href="<?php the_permalink(); ?>">
+                        <?php echo $image ?>
+                        <h3><?php the_content() ?></h3>
+                    </a>
+                </div>
+            </div>
+
+        <?php }
+        ?>
+
+    </div>
+</div>
+
+
+<!-- 
+<div class="container">
+    <div class="row homepage__3col">
         <div class="col-md-4">
             <div class="box--grey">
                 <p><a href="https://rotary-quebecest.org/"><img class="alignnone size-full wp-image-421" src="https://rotary-quebecest.org/contenu/wp-content/uploads/2015/01/Logo-Rotary-vignette-web.jpg" alt="Logo-Rotary-vignette-web" srcset="https://rotary-quebecest.org/contenu/wp-content/uploads/2015/01/Logo-Rotary-vignette-web.jpg 240w, https://rotary-quebecest.org/contenu/wp-content/uploads/2015/01/Logo-Rotary-vignette-web-120x80.jpg 120w" sizes="(max-width: 240px) 100vw, 240px"></a></p>
@@ -24,4 +55,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->

@@ -5,40 +5,37 @@
  *  Custom functions, support, custom post types and more.
  */
 
- /*
+/*
  	Fonction pour autoriser la connexion automatique au Prospecteur 1
 	Autoriser à partir du profil WP éditeur
  */
 
-if ( current_user_can('delete_others_pages') )
-{
+if (current_user_can('delete_others_pages')) {
 	session_start();
 
 	$_SESSION['nom'] = 'asterix';
 	$_SESSION['mdp'] = 'Le24Janvier2014$';
-
 }
 
-if (function_exists('add_theme_support'))
-{
-    // Add Menu Support
-    add_theme_support('menus');
+if (function_exists('add_theme_support')) {
+	// Add Menu Support
+	add_theme_support('menus');
 
-    // Add Thumbnail Theme Support
-    add_theme_support('post-thumbnails');
-    add_image_size('large', 700, '', true); // Large Thumbnail
-    add_image_size('medium', 250, '', true); // Medium Thumbnail
-    add_image_size('small', 120, '', true); // Small Thumbnail
-    add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+	// Add Thumbnail Theme Support
+	add_theme_support('post-thumbnails');
+	add_image_size('large', 700, '', true); // Large Thumbnail
+	add_image_size('medium', 250, '', true); // Medium Thumbnail
+	add_image_size('small', 120, '', true); // Small Thumbnail
+	add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
-    // Add Support for Custom Backgrounds - Uncomment below if you're going to use
-    /*add_theme_support('custom-background', array(
+	// Add Support for Custom Backgrounds - Uncomment below if you're going to use
+	/*add_theme_support('custom-background', array(
 	'default-color' => 'FFF',
 	'default-image' => get_template_directory_uri() . '/img/bg.jpg'
     ));*/
 
-    // Add Support for Custom Header - Uncomment below if you're going to use
-    /*add_theme_support('custom-header', array(
+	// Add Support for Custom Header - Uncomment below if you're going to use
+	/*add_theme_support('custom-header', array(
 	'default-image'			=> get_template_directory_uri() . '/img/headers/default.jpg',
 	'header-text'			=> false,
 	'default-text-color'		=> '000',
@@ -50,11 +47,11 @@ if (function_exists('add_theme_support'))
 	'admin-preview-callback'	=> $adminpreview_cb
     ));*/
 
-    // Enables post and comment RSS feed links to head
-    add_theme_support('automatic-feed-links');
+	// Enables post and comment RSS feed links to head
+	add_theme_support('automatic-feed-links');
 
-    // Localisation Support
-    load_theme_textdomain('prospecteur', get_template_directory() . '/languages');
+	// Localisation Support
+	load_theme_textdomain('prospecteur', get_template_directory() . '/languages');
 }
 
 /*
@@ -66,14 +63,14 @@ if (function_exists('add_theme_support'))
 // Load Custom Theme Scripts using Enqueue
 function prospecteur_scripts()
 {
-    if (!is_admin()) {
-        wp_deregister_script('jquery'); // Deregister WordPress jQuery
-        wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', array(), '1.11.1'); // Google CDN jQuery
-        wp_enqueue_script('jquery'); // Enqueue it!
+	if (!is_admin()) {
+		wp_deregister_script('jquery'); // Deregister WordPress jQuery
+		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', array(), '1.11.1'); // Google CDN jQuery
+		wp_enqueue_script('jquery'); // Enqueue it!
 
 		wp_register_script('prospecteurscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
 		wp_enqueue_script('prospecteurscripts'); // Enqueue it!
-    }
+	}
 }
 
 // Hook into the 'wp_enqueue_scripts' action
@@ -81,17 +78,17 @@ function prospecteur_scripts()
 // Loading Conditional Scripts
 function conditional_scripts()
 {
-    if (is_page('pagenamehere')) {
-        wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery'), '1.0.0'); // Conditional script(s)
-        wp_enqueue_script('scriptname'); // Enqueue it!
-    }
+	if (is_page('pagenamehere')) {
+		wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery'), '1.0.0'); // Conditional script(s)
+		wp_enqueue_script('scriptname'); // Enqueue it!
+	}
 }
 
 // Theme Stylesheets using Enqueue
 function prospecteur_styles()
 {
 	wp_register_style('prospecteur', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
-    wp_enqueue_style('prospecteur'); // Enqueue it!
+	wp_enqueue_style('prospecteur'); // Enqueue it!
 }
 
 // RT2014
@@ -99,23 +96,22 @@ function prospecteur_styles()
 // < ?php wp_nav_menu( array( 'theme_location' => 'navigation-principale-horizontale' ) ); ? >
 function register_prospecteur_navigation()
 {
-    register_nav_menus( array(
-        'navigation-principale-horizontale' => __('Navigation principale horizontale', 'prospecteur'),
-        'navigation-principale-verticale' => __('Navigation Activités', 'prospecteur'),
-        'navigation-secondaire' => __('Navigation Club', 'prospecteur'),
+	register_nav_menus(array(
+		'navigation-principale-horizontale' => __('Navigation principale horizontale', 'prospecteur'),
+		'navigation-principale-verticale' => __('Navigation Activités', 'prospecteur'),
+		'navigation-secondaire' => __('Navigation Club', 'prospecteur'),
 		'navigation-pied-de-page' => __('Navigation Mission', 'prospecteur')
-    ));
+	));
 }
 
 add_action('init', 'register_prospecteur_navigation');
 
 
-add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+add_filter('nav_menu_css_class', 'special_nav_class', 10, 2);
 
-function special_nav_class( $classes, $item )
+function special_nav_class($classes, $item)
 {
-	if( is_single() && $item->title == "Blog" )
-	{ //Notice you can change the conditional from is_single() and $item->title
+	if (is_single() && $item->title == "Blog") { //Notice you can change the conditional from is_single() and $item->title
 		$classes[] = "special-class";
 	}
 	return $classes;
@@ -126,55 +122,56 @@ function special_nav_class( $classes, $item )
 // Remove the <div> surrounding the dynamic navigation to cleanup markup
 function my_wp_nav_menu_args($args = '')
 {
-    $args['container'] = false;
-    return $args;
+	$args['container'] = false;
+	return $args;
 }
 
 // Remove Injected classes, ID's and Page ID's from Navigation <li> items
 function my_css_attributes_filter($var)
 {
-    return is_array($var) ? array() : '';
+	return is_array($var) ? array() : '';
 }
 
 // Remove invalid rel attribute values in the categorylist
 function remove_category_rel_from_category_list($thelist)
 {
-    return str_replace('rel="category tag"', 'rel="tag"', $thelist);
+	return str_replace('rel="category tag"', 'rel="tag"', $thelist);
 }
 
 // Add page slug to body class, love this - Credit: Starkers Wordpress Theme
 function add_slug_to_body_class($classes)
 {
-    global $post;
-    if (is_home()) {
-        $key = array_search('blog', $classes);
-        if ($key > -1) {
-            unset($classes[$key]);
-        }
-    } elseif (is_page()) {
-        $classes[] = sanitize_html_class($post->post_name);
-    } elseif (is_singular()) {
-        $classes[] = sanitize_html_class($post->post_name);
-    }
+	global $post;
+	if (is_home()) {
+		$key = array_search('blog', $classes);
+		if ($key > -1) {
+			unset($classes[$key]);
+		}
+	} elseif (is_page()) {
+		$classes[] = sanitize_html_class($post->post_name);
+	} elseif (is_singular()) {
+		$classes[] = sanitize_html_class($post->post_name);
+	}
 
-    return $classes;
+	return $classes;
 }
 
 // Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
 function html5wp_pagination()
 {
-    global $wp_query;
-    $big = 999999999;
-    echo paginate_links(array(
-        'base' => str_replace($big, '%#%', get_pagenum_link($big)),
-        'format' => '?paged=%#%',
-        'current' => max(1, get_query_var('paged')),
-        'total' => $wp_query->max_num_pages
-    ));
+	global $wp_query;
+	$big = 999999999;
+	echo paginate_links(array(
+		'base' => str_replace($big, '%#%', get_pagenum_link($big)),
+		'format' => '?paged=%#%',
+		'current' => max(1, get_query_var('paged')),
+		'total' => $wp_query->max_num_pages
+	));
 }
 
-function more($more) {
-return '<a class="read" href="'.get_permalink().'">Lire la suite</a>';
+function more($more)
+{
+	return '<a class="read" href="' . get_permalink() . '">Lire la suite</a>';
 }
 add_filter('the_content_more_link', 'more');
 
@@ -186,10 +183,10 @@ add_filter('the_content_more_link', 'more');
 // }
 
 // Remove thumbnail width and height dimensions that prevent fluid images in the_thumbnail
-function remove_thumbnail_dimensions( $html )
+function remove_thumbnail_dimensions($html)
 {
-    $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
-    return $html;
+	$html = preg_replace('/(width|height)=\"\d*\"\s/', "", $html);
+	return $html;
 }
 
 /*
@@ -251,7 +248,7 @@ add_shortcode('embrouillerCourriel', 'embrouillerCourriel'); // Place [embrouill
 // Shortcode Demo with simple <h2> tag
 function embrouillerCourriel($atts, $content = null) // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
 {
-    return '<a href="javascript:genDynCourriel( \'info\' )" >Contactez-nous par courriel</a>';
+	return '<a href="javascript:genDynCourriel( \'info\' )" >Contactez-nous par courriel</a>';
 }
 
 // RT2014
@@ -259,7 +256,7 @@ function embrouillerCourriel($atts, $content = null) // Demo Heading H2 shortcod
 // Afficher le contenu via < ?php echo do_shortcode( "[aucuneArticle]" ); ? >
 function aucunArticle() // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
 {
-    return '<h5>Aucun article</h5>';
+	return '<h5>Aucun article</h5>';
 }
 
 add_shortcode('aucunArticle', 'aucunArticle');
@@ -270,24 +267,21 @@ add_shortcode('aucunArticle', 'aucunArticle');
 Enlever les menus non nécessaires pour le profil éditeur
 */
 
-function remove_menus ()
+function remove_menus()
 {
 	global $menu;
 	global $current_user;
 
 	//$current_user = current_user_can('activate_plugins');
 
-	if ( ! current_user_can('activate_plugins'))
-	{
-		$restricted = array(__('Links'),__('Tools'),__('Comments'),__('Profil'));
-		end ($menu);
+	if (!current_user_can('activate_plugins')) {
+		$restricted = array(__('Links'), __('Tools'), __('Comments'), __('Profil'));
+		end($menu);
 
-		while (prev($menu))
-		{
-			$value = explode(' ',$menu[key($menu)][0]);
+		while (prev($menu)) {
+			$value = explode(' ', $menu[key($menu)][0]);
 
-			if(in_array($value[0] != NULL?$value[0]:"" , $restricted))
-			{
+			if (in_array($value[0] != NULL ? $value[0] : "", $restricted)) {
 				unset($menu[key($menu)]);
 			}
 		}
@@ -300,11 +294,10 @@ add_action('admin_menu', 'remove_menus');
  * @var $roleObject WP_Role
  * Ajouter le menu dans le tableau de bord de WP : Apparence, afin que le profil éditeur puisse accéder à Apparence -> Menus
  */
-$roleObject = get_role( 'editor' );
+$roleObject = get_role('editor');
 
-if (!$roleObject->has_cap( 'edit_theme_options' ) )
-{
-    $roleObject->add_cap( 'edit_theme_options' );
+if (!$roleObject->has_cap('edit_theme_options')) {
+	$roleObject->add_cap('edit_theme_options');
 }
 
 /*
@@ -312,14 +305,15 @@ Admin - login personnalisé - ajout du logo de Prospection lors du login - l'ima
 */
 
 add_action("login_head", "my_login_head");
-function my_login_head() {
+function my_login_head()
+{
 	echo "
 	<style>
 	body.login {
 		background-color:#f2f2f2;}
 
 	body.login #login h1 a {
-		background: url('".get_bloginfo('template_url')."/images/logo-rotary-login.png') no-repeat scroll center top transparent;
+		background: url('" . get_bloginfo('template_url') . "/images/logo-rotary-login.png') no-repeat scroll center top transparent;
 		height: 100px;
 		width: 317px;
 	}
@@ -330,7 +324,7 @@ function my_login_head() {
 /*
 Custom admin login logo link - destination du lien lors du click sur le logo
 */
-add_filter( 'login_headerurl', 'custom_loginlogo_url' );
+add_filter('login_headerurl', 'custom_loginlogo_url');
 function custom_loginlogo_url($url)
 {
 	return 'http://www.prospection.qc.ca';
@@ -357,7 +351,7 @@ add_action('admin_menu', 'disable_default_dashboard_widgets');
 /*
 Admin - personnaliser le texte du pied de page
 */
-function modify_footer_admin ()
+function modify_footer_admin()
 {
 	echo 'Créé par <a href="http://www.prospection.qc.ca/">Prospection inc.</a>.';
 }
@@ -455,7 +449,7 @@ function mon_widget_prospecteur_v1()
 
 function widget_prospecteur_v1()
 {
-    session_start();
+	session_start();
 	echo '
 		<div style="border:solid 1px #ccc; text-align:center; border-radius:4px; padding:15px;">
 			<img src="http://rotary-quebecest.org/contenu/prospecteur/themes/rotary/images/gestion-site.jpg" />
@@ -473,8 +467,8 @@ function widget_prospecteur_v1()
 }
 
 /**
-*	Personnaliser (remplacer) l'icône WP du dashboard (en haut, à gauche)
-*/
+ *	Personnaliser (remplacer) l'icône WP du dashboard (en haut, à gauche)
+ */
 add_action('wp_dashboard_setup', 'mon_widget_prospecteur_v1');
 
 
@@ -491,7 +485,7 @@ function mon_widget_prospecteur_v2()
 
 function widget_prospecteur_v2()
 {
-    session_start();
+	session_start();
 	echo '
 		<div style="margin-top:1em;border:solid 1px #ccc; text-align:center; border-radius:4px; padding:15px;">
 			<a href="http://rotary-quebecest.org/prospecteur/index.php" target="_blank" title="Gestion des membres, des envois et des rapports">
@@ -513,28 +507,31 @@ function widget_prospecteur_v2()
 add_action('wp_dashboard_setup', 'mon_widget_prospecteur_v2');
 
 /**
-*	Personnaliser (remplacer) l'icône WP du dashboard (en haut, à gauche)
-*/
+ *	Personnaliser (remplacer) l'icône WP du dashboard (en haut, à gauche)
+ */
 add_action('admin_head', 'my_custom_logo');
 
-function my_custom_logo() {
+function my_custom_logo()
+{
 	echo "
 	<style type='text/css'>
-	#wp-admin-bar-wp-logo > .ab-item .ab-icon {background:url('".get_bloginfo('template_url')."/img/logo-ico-prospection.png') no-repeat;}
-	#wpadminbar.nojs #wp-admin-bar-wp-logo:hover > .ab-item .ab-icon, #wpadminbar #wp-admin-bar-wp-logo.hover > .ab-item .ab-icon { background: url('".get_bloginfo('template_url')."/img/logo-ico-prospection.png') !important; }
+	#wp-admin-bar-wp-logo > .ab-item .ab-icon {background:url('" . get_bloginfo('template_url') . "/img/logo-ico-prospection.png') no-repeat;}
+	#wpadminbar.nojs #wp-admin-bar-wp-logo:hover > .ab-item .ab-icon, #wpadminbar #wp-admin-bar-wp-logo.hover > .ab-item .ab-icon { background: url('" . get_bloginfo('template_url') . "/img/logo-ico-prospection.png') !important; }
 	</style>";
 }
 
 // Éviter le scroll lors du clique sur le "lire la suite".
-function remove_more_link_scroll( $link ) {
-	$link = preg_replace( '|#more-[0-9]+|', '', $link );
+function remove_more_link_scroll($link)
+{
+	$link = preg_replace('|#more-[0-9]+|', '', $link);
 	return $link;
 }
-add_filter( 'the_content_more_link', 'remove_more_link_scroll' );
+add_filter('the_content_more_link', 'remove_more_link_scroll');
 
 // Hide admin help tab
-function hide_help() {
-    echo '<style type="text/css">
+function hide_help()
+{
+	echo '<style type="text/css">
             #contextual-help-link-wrap { display: none !important; }
           </style>';
 }
@@ -542,18 +539,19 @@ add_action('admin_head', 'hide_help');
 
 
 // renommer le menu du tableau de bord : Articles pour Nouvelles ( adpater selon les besoins )
-function menu_item_text( $menu )
+function menu_item_text($menu)
 {
-     $menu = str_ireplace( 'Articles', 'Nouvelles', $menu );
-     return $menu;
+	$menu = str_ireplace('Articles', 'Nouvelles', $menu);
+	return $menu;
 }
 //add_filter('gettext', 'menu_item_text');
 //add_filter('ngettext', 'menu_item_text');
 
 /* Disable the Admin Bar. */
-add_filter( 'show_admin_bar', '__return_false' );
+add_filter('show_admin_bar', '__return_false');
 
-function hide_admin_bar_settings() {
+function hide_admin_bar_settings()
+{
 ?>
 	<style type="text/css">
 		.show-admin-bar {
@@ -563,13 +561,16 @@ function hide_admin_bar_settings() {
 <?php
 }
 
-function disable_admin_bar() {
-    add_filter( 'show_admin_bar', '__return_false' );
-    add_action( 'admin_print_scripts-profile.php',
-         'hide_admin_bar_settings' );
+function disable_admin_bar()
+{
+	add_filter('show_admin_bar', '__return_false');
+	add_action(
+		'admin_print_scripts-profile.php',
+		'hide_admin_bar_settings'
+	);
 }
 
-add_action( 'init', 'disable_admin_bar' , 9 );
+add_action('init', 'disable_admin_bar', 9);
 
 
 // RT2014
@@ -577,16 +578,16 @@ add_action( 'init', 'disable_admin_bar' , 9 );
 function custom_theme_features()
 {
 	// Add theme support for Post Formats
-	$formats = array( 'status', 'quote', 'gallery', 'video', 'link', 'aside' );
-	add_theme_support( 'post-formats', $formats );
+	$formats = array('status', 'quote', 'gallery', 'video', 'link', 'aside');
+	add_theme_support('post-formats', $formats);
 }
 
-add_action( 'after_setup_theme', 'custom_theme_features' );
+add_action('after_setup_theme', 'custom_theme_features');
 
 // RT 2014
 // afficher ou non le fil d'ariane header.php
 // On SET la variable GLOBAL dans le fichier fonction
- $GLOBALS['filAriane'] = true;
+$GLOBALS['filAriane'] = true;
 // On utilise la valeur de la variable dans un fichier TPL
 // global $filAriane;
 // exemple :
@@ -601,31 +602,27 @@ function filAriane()
 {
 	global $post;
 	// Afficher le premier lien du fil d'ariane (remarque : le 70 est l'ID de la PAGE d'accueil (à adapter à chaque fois))
-	$crumbs = '<ul class="breadcrumbs"><li><a href="'.get_option( 'home' ).'">'.get_the_title( 70 ).'</a></li>';
+	$crumbs = '<ul class="breadcrumbs"><li><a href="' . get_option('home') . '">' . get_the_title(70) . '</a></li>';
 
 	// Si la PAGE à un PARENT, afficher le lien vers celui-ci
-	if ( $post->post_parent )
-	{
-		$crumbs .= '<li><a href="'.get_permalink( $post->post_parent ).'">'.get_the_title( $post->post_parent ).'</a></li>';
+	if ($post->post_parent) {
+		$crumbs .= '<li><a href="' . get_permalink($post->post_parent) . '">' . get_the_title($post->post_parent) . '</a></li>';
 	}
 
 	// Si ce ni la page d'accueil du site, ni la page des articles
-	if(( ! is_front_page() ) && ( is_page() ) )
-	{
-		$crumbs .= '<li>'.get_the_title( $post->ID ).'</li>';
+	if ((!is_front_page()) && (is_page())) {
+		$crumbs .= '<li>' . get_the_title($post->ID) . '</li>';
 	}
 
 	// Si ce n'est ni la page d'accueil du site, ni la page des articles ou archives
-	if ( ( is_home() || ( is_archive() ) ) )
-	{
-		$crumbs .= ' <li>'.get_the_title( get_option( page_for_posts ) ).'</li>';
+	if ((is_home() || (is_archive()))) {
+		$crumbs .= ' <li>' . get_the_title(get_option(page_for_posts)) . '</li>';
 	}
 
 	// Si c,est une page SINGLE
-	if ( is_single() )
-	{
-		$crumbs .= '<li><a href="'.get_permalink(get_option( page_for_posts ) ).'">'.get_the_title( get_option( page_for_posts ) ).'</a></li>';
-		$crumbs .= ' <li>'.get_the_title( $post->ID ).'</li>';
+	if (is_single()) {
+		$crumbs .= '<li><a href="' . get_permalink(get_option(page_for_posts)) . '">' . get_the_title(get_option(page_for_posts)) . '</a></li>';
+		$crumbs .= ' <li>' . get_the_title($post->ID) . '</li>';
 	}
 
 	$crumbs .=    '</ul>';
@@ -637,40 +634,39 @@ function filAriane()
 // supprimer toutes les classes "excédentaires" générées par WP
 //add_filter( 'nav_menu_css_class', 'mycssattributesfilter', 100, 1 );
 //add_filter( 'nav_menu_item_id', 'mycssattributesfilter', 100, 1 );
-add_filter( 'page_css_class', 'mycssattributesfilter', 100, 1 );
+add_filter('page_css_class', 'mycssattributesfilter', 100, 1);
 
 function mycssattributesfilter($var)
 {
-  return is_array( $var ) ? array_intersect( $var, array( 'current-menu-item' ) ) : '';
+	return is_array($var) ? array_intersect($var, array('current-menu-item')) : '';
 }
 
 // RT2014
 // test ajout META
-add_action('wp_head','keywords_and_desc');
-function keywords_and_desc(){
-    global $post;
-    if (is_single()||is_page()){
-        if(get_post_meta($post->ID,'my_keywords',true) != '')
-            echo    '<meta content="'.get_post_meta($post->ID,'my_keywords',true).'" name="keywords">';
-        if(get_post_meta($post->ID,'my_description',true) != '')
-            echo    '<meta content="'.get_post_meta($post->ID,'my_description',true).'" name="description">';
-    }
+add_action('wp_head', 'keywords_and_desc');
+function keywords_and_desc()
+{
+	global $post;
+	if (is_single() || is_page()) {
+		if (get_post_meta($post->ID, 'my_keywords', true) != '')
+			echo    '<meta content="' . get_post_meta($post->ID, 'my_keywords', true) . '" name="keywords">';
+		if (get_post_meta($post->ID, 'my_description', true) != '')
+			echo    '<meta content="' . get_post_meta($post->ID, 'my_description', true) . '" name="description">';
+	}
 }
 
 /* TRES IMPORTANT - PERMET D'AFFICHER UNE VIEW PAR SINGLE POST (SINON IMPOSSIBLE) */
 /* ref. : http://wp-types.com/forums/topic/cant-get-render_view-to-show-a-specific-post/ */
 add_filter('wpv_filter_query', 'show_only_postid', 10, 2);
 
-function show_only_postid( $query, $settings )
+function show_only_postid($query, $settings)
 {
-	if ( $settings['view_id'] == 21 ) // ID de la VIEW, ne fonctionne pas avec le NAME ou le SLUG /
+	if ($settings['view_id'] == 21) // ID de la VIEW, ne fonctionne pas avec le NAME ou le SLUG /
 	{
 		global $WP_Views;
 		$view_shortcode_attributes = $WP_Views->view_shortcode_attributes;
 		$query['p'] = $view_shortcode_attributes[0]['post_id'];
-	}
-
-	elseif ( $settings['view_id'] == 14) // ID de la VIEW, ne fonctionne pas avec le NAME ou le SLUG /
+	} elseif ($settings['view_id'] == 14) // ID de la VIEW, ne fonctionne pas avec le NAME ou le SLUG /
 	{
 		global $WP_Views;
 		$view_shortcode_attributes = $WP_Views->view_shortcode_attributes;
@@ -684,28 +680,28 @@ function show_only_postid( $query, $settings )
 
 
 /**
-* Supprimer la barre de tâche admin de WP pour les abonnés
-*/
-function themerotary_disable_admin_bar() {
-	if( ! current_user_can('edit_posts') )
+ * Supprimer la barre de tâche admin de WP pour les abonnés
+ */
+function themerotary_disable_admin_bar()
+{
+	if (!current_user_can('edit_posts'))
 		add_filter('show_admin_bar', '__return_false');
 }
-add_action( 'after_setup_theme', 'themerotary_disable_admin_bar' );
+add_action('after_setup_theme', 'themerotary_disable_admin_bar');
 
 /**
-* Rediriger les abonnés (membres rotary) vers la page du bottin privé lorsqu'ils sont connectés
-*/
+ * Rediriger les abonnés (membres rotary) vers la page du bottin privé lorsqu'ils sont connectés
+ */
 function themerotary_redirect_admin()
 {
 	// Vérifier si le profil est moins élevé qu'éditeur
-	if ( ! current_user_can( 'publish_pages' ) )
-	{
-		wp_redirect( 'http://rotary-quebecest.org/fr/membres/bottin.php' );
+	if (!current_user_can('publish_pages')) {
+		wp_redirect('http://rotary-quebecest.org/fr/membres/bottin.php');
 		exit;
 	}
 }
 
-add_action( 'admin_init', 'themerotary_redirect_admin' );
+add_action('admin_init', 'themerotary_redirect_admin');
 
 
 
@@ -721,7 +717,7 @@ function create_threeboxes()
 				'name' => __('Boîtes'),
 				'singular_name' => __('Boîte')
 			),
-			'public' => false,
+			'public' => true,
 			'has_archive' => false,
 			'supports'            => array('title', 'thumbnail', 'revisions', 'custom-fields',),
 		)

@@ -1,6 +1,8 @@
+
+
 <div class="container">
     <div class="row homepage__3col">
-
+    <?php wp_reset_postdata(); ?>
         <?php
         $boxes = get_posts(array(
             'post_type' => 'Boîtes',
@@ -18,8 +20,10 @@
                     <a href="<?php echo $url; ?>">
                         <?php echo $image ?>
                         <h3><?php the_title_attribute() ?></h3>
+                        <?php while ( have_posts() ) : the_post(); ?>
                        
 <?php wp_editor();?>
+<?php endwhile; ?>
 
                     </a>
                 </div>

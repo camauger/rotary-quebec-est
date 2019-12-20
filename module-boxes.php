@@ -21,7 +21,7 @@
                     <a href="<?php echo $url; ?>">
                         <?php echo $image ?>
                         <h3><?php the_title_attribute() ?></h3>
-                        <?php echo $text ?>
+                        <?php echo $content ?>
 
                     </a>
                 </div>

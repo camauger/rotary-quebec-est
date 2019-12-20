@@ -43,20 +43,22 @@ $the_query_xs = new WP_Query($args);
 
 <section class="container">
     <div class="row">
-        <blockquote class="col-md-7">
 
-        <blockquote class="fb-page" data-href="https://www.facebook.com/ClubRotaryQuebecEst/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ClubRotaryQuebecEst/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ClubRotaryQuebecEst/">Club Rotary Québec-Est</a></blockquote></blockquote>
 
-       
+        <div class="col-md-7 fb-page" data-href="https://www.facebook.com/ClubRotaryQuebecEst/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/ClubRotaryQuebecEst/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ClubRotaryQuebecEst/">Club Rotary Québec-Est</a></blockquote>
         </div>
-    </div>
-    <div class="col-md-5">
-        <div class="">
-            <h3><?php echo esc_html($post->blocTitre) ?></h3>
-            <img src="<?php echo esc_html($post->blocImage) ?>" alt="Nous passons à l'action">
-            <p><?php echo esc_html($post->blocTexte) ?></p>
+
+
+
+
+        <div class="col-md-5">
+            <div class="">
+                <h3><?php echo esc_html($post->blocTitre) ?></h3>
+                <img src="<?php echo esc_html($post->blocImage) ?>" alt="Nous passons à l'action">
+                <p><?php echo esc_html($post->blocTexte) ?></p>
+            </div>
         </div>
-    </div>
 
     </div>
 </section>

@@ -49,17 +49,16 @@ img {
 // Body
 
 body {
-	background: $body-background;
-	font-size: 16px;
-	font-family: Arial, Helvetica, sans-serif;
-  }
+  background: $body-background;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 // Styles de base
 a {
-	color: $darker-blue;
-	outline: none;
-  }
-
+  color: $darker-blue;
+  outline: none;
+}
 
 //** Menus */
 $menu-background-color: $the-grey;
@@ -85,7 +84,7 @@ a.logo img {
   //     padding-left: 40px;
   //   }
   a {
-    color: $darker-blue!important;
+    color: $darker-blue !important;
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: 700;
@@ -112,12 +111,11 @@ a.logo img {
   }
 }
 
-
 //** Spacing */
 
 section.container {
-	padding-top: 30px;
-	padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .wrapper--page {
@@ -139,13 +137,14 @@ section.container {
   height: 100%;
 }
 
-
-h1, h2, h3, h4 {
-	font-family: "museo_slab500"!important;
-	color: $darker-blue;
-	margin-bottom: 24px;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "museo_slab500" !important;
+  color: $darker-blue;
+  margin-bottom: 24px;
 }
-
 
 .list-group a {
   border: 1px solid #ddd;
@@ -157,7 +156,6 @@ h1, h2, h3, h4 {
 a.list-group-item {
   color: #555;
 }
-
 
 // Buttons
 @import "./styles/buttons";
@@ -197,8 +195,6 @@ a.list-group-item.active {
 
 // Footer
 @import "./styles/footer";
-
-
 
 .un-programme-resume {
   margin: 2em 0 2em 0;
@@ -264,7 +260,7 @@ a.list-group-item.active {
   margin: 0 !important;
 }
 .current-menu-item {
-  border-bottom: solid 3px $the-yellow;;
+  border-bottom: solid 3px $the-yellow;
   background: $darker-blue !important;
   border-radius: 4px;
   margin: 0 !important;

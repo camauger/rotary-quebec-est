@@ -44,8 +44,6 @@ $the_query_xs = new WP_Query($args);
 <section class="container">
     <div class="row">
         <div class="col-md-7">
-        <div id="fb-root"></div>
-<!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_CA/sdk.js#xfbml=1&version=v5.0&appId=161767141187083&autoLogAppEvents=1"></script> -->
 
 
 <div class="fb-page" data-href="https://www.facebook.com/ClubRotary" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>

@@ -41,13 +41,7 @@
                                                
                             
                     </article>
-                   <div class="">
-                        <!-- ******** 3 colonnes ********* -->
-                        <div class="col-md-12">
-                            <?php $args = array( 'name' => 'vue-3colonnes-pinterieures' ); echo render_view( $args ); ?> 
-                        </div>
-                        <!--  // ******** 3 colonnes ********* -->                    
-                    </div>  
+                   <?php get_template_part('module-boxes') ; ?>
        			</div>	        
         <!-- ouvert dans _includes/ menu/nav-secondaire -->
         </div><!-- row -->

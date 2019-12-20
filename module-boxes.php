@@ -4,11 +4,11 @@
     <div class="row homepage__3col">
     <?php wp_reset_postdata(); ?>
         <?php
-        $boxes = get_posts(array(
-            'post_type' => 'Boîtes',
-            'order' => 'ASC',
-            'showposts' => 3
-        ));
+        $boxes = new WP_Query( array(  'post_type' => 'Boîtes',
+        'order' => 'ASC',
+        'showposts' => 3) );
+
+       
 
         foreach ($boxes as $post) {
             $image = get_the_post_thumbnail($post->ID, 'large');

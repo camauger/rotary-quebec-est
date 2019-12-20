@@ -41,7 +41,9 @@
                                                
                             
                     </article>
-                   <?php get_template_part('module-boxes') ; ?>
+                  <div class="row">
+                  <?php get_template_part('module-boxes') ; ?>
+                  </div>
        			</div>	        
         <!-- ouvert dans _includes/ menu/nav-secondaire -->
         </div><!-- row -->

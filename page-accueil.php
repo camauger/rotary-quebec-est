@@ -79,7 +79,11 @@ $the_query_xs = new WP_Query($args);
         </div>
     </div>
 </div>
+<div class="container">
+    <div class="row homepage__3col">
 <?php get_template_part('module-boxes'); ?>
+</div>
+</div>
 </div>
 
 <?php get_footer(); ?>

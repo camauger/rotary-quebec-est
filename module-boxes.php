@@ -14,9 +14,9 @@
             <div class="col-md-4">
                 <div class="box--grey">
 
-                    <a href="<?php the_permalink(); ?>">
+                    <a href="">
                         <?php echo $image ?>
-                        <h3><?php the_content() ?></h3>
+                        <h3><?php the_title_attribute() ?></h3>
                     </a>
                 </div>
             </div>

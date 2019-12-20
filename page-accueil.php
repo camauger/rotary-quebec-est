@@ -44,12 +44,17 @@ $the_query_xs = new WP_Query($args);
 <section class="container">
     <div class="row">
         <div class="col-md-7">
-            <blockquote class="facebook__container">
+        <div id="fb-root"></div>
+<!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_CA/sdk.js#xfbml=1&version=v5.0&appId=161767141187083&autoLogAppEvents=1"></script> -->
+
+
+<div class="fb-page" data-href="https://www.facebook.com/ClubRotary" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+            <!-- <blockquote class="facebook__container">
                 <h3>En bref sur <strong>Facebook</strong></h3>
                 <div class="fb-post" data-href="https://www.facebook.com/ClubRotaryQuebecEst/posts/2159444704156808" data-width="500" data-show-text="true">
                     <blockquote cite="https://developers.facebook.com/ClubRotaryQuebecEst/posts/2159444704156808" class="fb-xfbml-parse-ignore">
                         <p>Nous avons le privilège et la chance de recevoir Chloé Sainte-Marie au Club. Elle nous a laissé d&#039;excellents souvenirs...</p>Publié par <a href="https://www.facebook.com/ClubRotaryQuebecEst/">Club Rotary Québec-Est</a> sur&nbsp;<a href="https://developers.facebook.com/ClubRotaryQuebecEst/posts/2159444704156808">Vendredi 29 novembre 2019</a>
-                    </blockquote>
+                    </blockquote> -->
                 </div>
         </div>
         <div class="col-md-5">

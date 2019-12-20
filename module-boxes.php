@@ -18,7 +18,9 @@
                     <a href="<?php echo $url; ?>">
                         <?php echo $image ?>
                         <h3><?php the_title_attribute() ?></h3>
-                        
+                        <?php while(have_posts()) : the_post(); ?>
+<?php the_content();?>
+<?php endwhile; ?>
                     </a>
                 </div>
             </div>

@@ -719,7 +719,7 @@ function create_threeboxes()
 			),
 			'public' => true,
 			'has_archive' => false,
-			'supports'            => array('title', 'thumbnail', 'revisions', 'custom-fields',),
+			'supports'            => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields',),
 		)
 	);
 }
